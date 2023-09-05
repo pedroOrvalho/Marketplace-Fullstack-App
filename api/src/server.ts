@@ -5,12 +5,12 @@ import app from "./app";
 
 dotenv.config();
 
-const port = 4000;
+const port =  7001;
 
 mongoose
-  .connect(process.env.MONGODB_URI as string)
+  .connect(process.env.MONGOAPI as string)
   .then(() => {
-    app.listen(port, () => {
+   app.listen(port, () => {
       console.log(`server is running at port ${port}.`);
     });
   })

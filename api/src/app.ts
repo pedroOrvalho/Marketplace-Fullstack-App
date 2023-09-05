@@ -1,9 +1,22 @@
-import Express from "express";
-import cors from "cors";
 
-const app = Express();
+import Express from 'express'
+import cors from 'cors'
+import productRouter from './routers/products'
+import userRouter from './routers/users'
+
+const app=Express()
 
 app.use(Express.json())
-app.use(cors());
+app.use(cors())
 
-export default app;
+
+
+app.use("/product", productRouter)
+app.use("/user", userRouter)
+
+
+
+
+
+
+export default app
