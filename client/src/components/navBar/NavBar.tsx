@@ -1,7 +1,5 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
-import Marketplacelogo from "../images/Marketplace Logo.png"
+import Marketplacelogo from "../../images/Marketplace Logo.png";
 
 export default function Navbar() {
   return (
@@ -17,10 +15,11 @@ export default function Navbar() {
           <span className="marketplace1">Marketplace</span>
         </Link>
       </div>
-
       <div className="menu">
         <ul className="menu_1">
-          <li>Login now</li>
+          <Link to="/login">
+            <li>Login now</li>
+          </Link>
           <Link to="/buying">
             <li>Buying</li>
           </Link>
@@ -28,8 +27,7 @@ export default function Navbar() {
           <Link to="/selling">
             <li>Selling</li>
           </Link>
-
-          <Link to="/go-to-marketplace">
+          <Link to="/marketplace">
             <li>
               <button className="btn">Go to MarketPlace</button>
             </li>

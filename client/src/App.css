@@ -2,74 +2,75 @@
   text-align: center;
 }
 
-*{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
-  padding:0;
+  justify-content: space-evenly;
+  padding: 0;
   margin: 0;
   gap: 2rem;
   background-color: grey;
 }
 
-.marketlogo{
-  color: blue; 
+.marketlogo {
+  color: blue;
 }
-.marketplace1{
+.marketplace1 {
   position: absolute;
   padding-top: 1rem;
+}
 
-
-.side-bar{
-  width:25%;
-  height:100vh;
+.side-bar {
+  width: 25%;
+  height: 100vh;
   border-radius: 1px solid black;
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 3px 3px 2px rgb(214, 209, 209);
   position: fixed;
 }
- 
-.sidebar-item-div{
+
+.sidebar-item-div {
   display: flex;
-  gap:20px;
+  gap: 20px;
   align-items: center;
 }
 
-.logo{
+.logo {
   padding-right: 25rem;
 }
 
-.icon{
+.icon {
   border-radius: 50%;
   padding: 8px;
   background-color: rgb(203, 203, 203);
   box-shadow: 2px 1px 2px rgb(214, 209, 209);
   margin: 8px;
 }
-  
- .menu{
+
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
- }
+}
 
- .menu_1{
-   list-style-type: none;  
+.menu_1 {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap:1rem;
- }
-  
- .btn:hover{
+  gap: 1rem;
+}
+
+.btn:hover {
   cursor: pointer;
 }
-  
-.btn{
+
+.btn {
   color: white;
   background: blue;
   padding-top: 0.5rem;
@@ -78,31 +79,30 @@
   padding-left: 0.5rem;
   border-radius: 12px;
   border: none;
-
 }
 
- .Buying{
-  background-image: url("./components/images/phones.jpg");
+.Buying {
+  background-image: url("./images/phones.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height:400px;
+  height: 400px;
   text-align: center;
-  padding-top:3rem ;
- }
-  
- .buy{
+  padding-top: 3rem;
+}
+
+.buy {
   font-size: 2rem;
- }
-  
- .house {
-    align-items: center;
-  }
+}
 
- .browse{
-    padding-top: 2rem;
-  }
-  
-  .btn_market{
+.house {
+  align-items: center;
+}
+
+.browse {
+  padding-top: 2rem;
+}
+
+.btn_market {
   color: white;
   background: blue;
   padding-top: 0.5rem;
@@ -111,25 +111,24 @@
   padding-left: 0.5rem;
   border-radius: 12px;
   border: none;
-  }
+}
 
+.marketplace {
+  padding-top: 5rem;
+}
 
-  .marketplace{
-    padding-top:5rem;
-  }
-
-.buying_page1{
- background-image: url("./components/images/shoppingbags.jpg");
+.buying_page1 {
+  background-image: url("./images/shoppingbags.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height:400px;
+  height: 400px;
   text-align: center;
-  padding-top:5rem;
+  padding-top: 5rem;
 }
-   
-.btn3{
+
+.btn3 {
   cursor: pointer;
-   color: white;
+  color: white;
   background: blue;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -139,18 +138,18 @@
   border: none;
 }
 
-.buyingpage{
+.buyingpage {
   clip-path: 70%;
 }
-   
-.buy_sell{
+
+.buy_sell {
   color: white;
   font-size: 2rem;
 }
 
-.btn_sell{
-   cursor: pointer;
-   color: white;
+.btn_sell {
+  cursor: pointer;
+  color: white;
   background: blue;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -160,27 +159,27 @@
   border: none;
 }
 
-.selling{
-    background-image: url("./components/images/jacketman.jpg");
+.selling {
+  background-image: url("./images/jacketman.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height:450px;
+  height: 450px;
   text-align: center;
-  padding-top:3rem ;
+  padding-top: 3rem;
   color: white;
 }
 
-.interest_sell{
-  font-size:2rem;
-}
-
-.sell-on{
+.interest_sell {
   font-size: 2rem;
 }
-   
-.btn4{
-    cursor: pointer;
-   color: white;
+
+.sell-on {
+  font-size: 2rem;
+}
+
+.btn4 {
+  cursor: pointer;
+  color: white;
   background: blue;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -188,59 +187,58 @@
   padding-left: 0.5rem;
   border-radius: 12px;
   border: none;
-
 }
 
-.selling_pages{
-   background-image: url("./components/images/shoppingbags.jpg");
+.selling_pages {
+  background-image: url("./images/shoppingbags.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height:400px;
+  height: 400px;
   text-align: center;
 }
 
-.Footer{
-  font-size:10px;
+.Footer {
+  font-size: 10px;
   background-color: blue;
   color: white;
 }
-   
-.Footer_1{
+
+.Footer_1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
-  background-color:#367588 ;  
+  background-color: #367588;
 }
 
-.seller{
+.seller {
   text-align: center;
   padding: 3rem;
 }
 
-.Tips{
+.Tips {
   text-align: center;
 }
 
-.images{
+.images {
   text-align: center;
 }
-.icons{
+.icons {
   text-align: center;
 }
 
-.discover{
+.discover {
   color: blue;
-  font-size:3rem;
+  font-size: 3rem;
   padding-left: 3rem;
 }
-   
-.goods{
+
+.goods {
   padding-left: 20rem;
 }
-   
-.btn_explore{
-   color: white;
+
+.btn_explore {
+  color: white;
   background: blue;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -250,43 +248,42 @@
   border: none;
 }
 
-.btn_explore:hover{
+.btn_explore:hover {
   cursor: pointer;
   opacity: 0.9;
 }
-   
-.explore{
+
+.explore {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-left: 2rem;
 }
-   
-.ecommerce{
+
+.ecommerce {
   margin-left: 1rem;
 }
 
-.marketItem{
+.marketItem {
   margin: 7rem;
 }
 
 .Benefits {
   display: grid;
- grid-template-columns: 33%  33% 33%;
+  grid-template-columns: 33% 33% 33%;
 }
 
-.icons{
-  display:grid;
- grid-template-columns: 50% 50%;
+.icons {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.why{
-  display:flex;
+.why {
+  display: flex;
   flex-direction: row;
 }
 
-
-.product-div{
+.product-div {
   height: 100vh;
   width: 90%;
   background-color: rgb(254, 254, 253);
@@ -294,18 +291,22 @@
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 1px 1px 1px 4px rgb(214, 209, 209);
 }
-.sidebar{grid-area: sidebar;}
-.product{grid-area:product}
-
-.market-div{
-  display: grid;
-  grid-template-areas: 'sidebar  sidebar product product product product'
-  'sidebar sidebar product product product product'
-  'sidebar sidebar product product product product';
-  gap:10px;
-  
+.sidebar {
+  grid-area: sidebar;
+}
+.product {
+  grid-area: product;
 }
 
-.addlistings{
+.market-div {
+  display: grid;
+  grid-template-areas:
+    "sidebar  sidebar product product product product"
+    "sidebar sidebar product product product product"
+    "sidebar sidebar product product product product";
+  gap: 10px;
+}
+
+.addlistings {
   margin: 0 auto;
 }

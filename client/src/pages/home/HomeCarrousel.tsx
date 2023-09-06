@@ -1,11 +1,11 @@
-import React from 'react'
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import market from "../images/market.jpg"
-import people from "../images/people.jpg"
-import clothes from "../images/clothes.jpg"
-export default function MarketItem() {
+
+import market from "../../images/market.jpg"
+import people from "../../images/people.jpg"
+import clothes from "../../images/clothes.jpg"
+
+export default function HomeCarrousel() {
   return (
     <div>
        <Carousel>

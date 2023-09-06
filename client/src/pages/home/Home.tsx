@@ -1,9 +1,9 @@
-import React from 'react'
-import MarketItem from './MarketItem';
+import MarketItem from './HomeCarrousel';
+
 import PublicSharpIcon from "@mui/icons-material/PublicSharp";
 import ChatBubbleOutlineSharpIcon from "@mui/icons-material/ChatBubbleOutlineSharp";
 
-export default function Marketplace() {
+export default function Home() {
   return (
     <div>
       <div>
