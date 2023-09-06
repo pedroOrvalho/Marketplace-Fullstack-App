@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 
 import Users from "../model/User";
-import { CreateUserService, findUserByEmailService } from "../services/users";
+import { createUserService, findUserByEmailService } from "../services/users";
 import { UnauthorizedError } from "../helpers/apiErrors";
 
 dotenv.config();
@@ -28,7 +28,7 @@ export const createUser = async (
       password: hashedPassword,
     });
 
-    const newUser = await CreateUserService(user);
+    const newUser = await createUserService(user);
     res.status(200).json(newUser);
   } catch (error) {
     next(error);

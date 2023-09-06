@@ -1,11 +1,12 @@
 import { NotFoundError } from "../helpers/apiErrors";
 import User,{UserDocument} from "../model/User";
 
-export const CreateUserService= async (user:UserDocument):Promise<UserDocument>=>{
 
-    return user.save()
-
-}
+export const createUserService = async (
+  user: UserDocument
+): Promise<UserDocument> => {
+  return await user.save();
+};
 
 export const findUserByEmailService = async (
     userEmail: string
