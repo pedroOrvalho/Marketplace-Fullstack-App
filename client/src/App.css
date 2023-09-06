@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .navbar{
   display: flex;
   flex-direction: row;
@@ -9,27 +10,43 @@
   padding:0;
   margin: 0;
   gap: 2rem;
-
-  
- 
 }
 
 .marketlogo{
-  color: blue;
-  
+  color: blue; 
 }
 .marketplace1{
   position: absolute;
   padding-top: 1rem;
 
-}
- .menu{
 
+.side-bar{
+  width:25%;
+  height:100vh;
+  border-radius: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 3px 3px 2px rgb(214, 209, 209);
+  position: fixed;
+}
+ 
+.sidebar-item-div{
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
+
+.icon{
+  border-radius: 50%;
+  padding: 8px;
+  background-color: rgb(203, 203, 203);
+  box-shadow: 2px 1px 2px rgb(214, 209, 209);
+  margin: 8px;
+}
+  
+ .menu{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  
-
  }
 
  .menu_1{
@@ -38,11 +55,12 @@
   flex-direction: row;
   justify-content: space-between;
   gap:1rem;
-
  }
+  
  .btn:hover{
   cursor: pointer;
 }
+  
 .btn{
   color: white;
   background: blue;
@@ -63,17 +81,19 @@
   text-align: center;
   padding-top:3rem ;
  }
+  
  .buy{
   font-size: 2rem;
  }
-  .house {
+  
+ .house {
     align-items: center;
   }
 
-  .browse{
+ .browse{
     padding-top: 2rem;
-
   }
+  
   .btn_market{
   color: white;
   background: blue;
@@ -199,3 +219,29 @@
 .icons{
   text-align: center;
 }
+
+.product-div{
+  height: 100vh;
+  width: 90%;
+  background-color: rgb(254, 254, 253);
+  border-radius: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px 4px rgb(214, 209, 209);
+}
+.sidebar{grid-area: sidebar;}
+.product{grid-area:product}
+
+.market-div{
+  display: grid;
+  grid-template-areas: 'sidebar  sidebar product product product product'
+  'sidebar sidebar product product product product'
+  'sidebar sidebar product product product product';
+  gap:10px;
+  
+}
+
+.addlistings{
+  margin: 0 auto;
+}
+
+

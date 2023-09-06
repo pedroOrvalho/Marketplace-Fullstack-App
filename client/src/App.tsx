@@ -6,25 +6,20 @@ import Navbar from './components/navBar/NavBar';
 import Buying from './components/pages/Buying';
 import Selling from './components/pages/Selling';
 import GoToMarketplace from './components/pages/GoToMarketplace';
-
+import Login from './compnents/Registration/login';
+import Market from './compnents/marketplace/market';
 
 
 function App() {
   return (
 <div>
   <Navbar/>
-
- <Routes>
+<Routes>
 <Route path="/buying" element={<Buying />} />
 <Route path="/selling" element={<Selling />} />
- <Route path="/go-to-marketplace" element={<GoToMarketplace />} />
-  </Routes>
-
+<Route path="/marketplace" element={<Market />} />
+</Routes>
 </div>
-
-
-
-  
   )
 }
 
