@@ -5,7 +5,7 @@ import app from "./app";
 
 dotenv.config();
 
-const port =  7001;
+const port =  7000;
 
 mongoose
   .connect(process.env.MONGOAPI as string)

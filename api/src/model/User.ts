@@ -2,7 +2,6 @@ import mongoose, { Document } from "mongoose";
 
 export type UserDocument = Document & {
   firstName: string;
-
   lastName: string;
   enum: "user" | "admin";
   email: string;
@@ -16,8 +15,6 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  
- 
   lastName: {
     type: String,
     required: true,
@@ -33,7 +30,7 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-   
+    required: true,
   },
   banned: {
     type: Boolean,
