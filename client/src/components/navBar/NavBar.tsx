@@ -1,15 +1,23 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 import Marketplacelogo from "../images/Marketplace Logo.png"
 
 export default function Navbar() {
   return (
     <div className="navbar">
-      <p className="logo">
-      <img src={Marketplacelogo} alt="logo" style={{ width: 45 }} />
-      <span className="marketlogo">Marketplace </span>
-        </p>
-    
+      <div>
+        <img
+          className="marketlogo"
+          src={Marketplacelogo}
+          alt="logo"
+          style={{ width: 50 }}
+        />
+        <span className="marketplace1">
+          Marketplace
+        </span>
+      </div>
+
       <div className="menu">
         <ul className="menu_1">
           <li>Login now</li>

@@ -8,26 +8,27 @@
   justify-content:space-evenly;
   padding:0;
   margin: 0;
-  font-size: 15px;
+  gap: 2rem;
+
   
  
-}
-
-.logo{
-  padding-right:30rem ;
-  color: blue;
-  
 }
 
 .marketlogo{
-  margin-bottom: 15rem;
+  color: blue;
+  
+}
+.marketplace1{
   position: absolute;
+  padding-top: 1rem;
+
 }
  .menu{
- 
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  
 
  }
 
@@ -55,10 +56,10 @@
 }
 
  .Buying{
-  background-image: url("./components/images/backpack.jpg");
+  background-image: url("./components/images/phones.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height:300px;
+  height:400px;
   text-align: center;
   padding-top:3rem ;
  }
@@ -84,28 +85,19 @@
   border: none;
   }
 
-  .car{
-     background-image: url("./components/images/cars.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height:50px;
-  width: 350;
-  text-align: center;
-  padding-top:3rem ;
-  }
+
   .marketplace{
     padding-top:5rem;
   }
-.seethings{
-  background-color: blueviolet;
-}
+
 .buying_page1{
  background-image: url("./components/images/shoppingbags.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height:300px;
+  height:400px;
   text-align: center;
-  padding-top:10rem ;
+  padding-top:5rem;
+  
 
 }
 .btn3{
@@ -152,6 +144,58 @@
 }
 
 .interest_sell{
-  font-size:1.5rem;
+  font-size:2rem;
 }
 
+.sell-on{
+  font-size: 2rem;
+}
+.btn4{
+    cursor: pointer;
+   color: white;
+  background: blue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 12px;
+  border: none;
+
+}
+
+.selling_pages{
+   background-image: url("./components/images/shoppingbags.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:400px;
+  text-align: center;
+}
+
+.Footer{
+  font-size:10px;
+  background-color: blue;
+}
+.Footer_1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  background-color: lightblue;
+}
+
+.seller{
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom:3rem ;
+}
+
+.Tips{
+  text-align: center;
+}
+
+.images{
+  text-align: center;
+}
+.icons{
+  text-align: center;
+}
