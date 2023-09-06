@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .navbar{
   display: flex;
@@ -10,6 +13,7 @@
   padding:0;
   margin: 0;
   gap: 2rem;
+  background-color: grey;
 }
 
 .marketlogo{
@@ -33,6 +37,10 @@
   display: flex;
   gap:20px;
   align-items: center;
+}
+
+.logo{
+  padding-right: 25rem;
 }
 
 .icon{
@@ -117,9 +125,8 @@
   height:400px;
   text-align: center;
   padding-top:5rem;
-  
-
 }
+   
 .btn3{
   cursor: pointer;
    color: white;
@@ -130,15 +137,15 @@
   padding-left: 0.5rem;
   border-radius: 12px;
   border: none;
-
 }
-
 
 .buyingpage{
-  color: white;
+  clip-path: 70%;
 }
+   
 .buy_sell{
   color: white;
+  font-size: 2rem;
 }
 
 .btn_sell{
@@ -170,6 +177,7 @@
 .sell-on{
   font-size: 2rem;
 }
+   
 .btn4{
     cursor: pointer;
    color: white;
@@ -194,19 +202,20 @@
 .Footer{
   font-size:10px;
   background-color: blue;
+  color: white;
 }
+   
 .Footer_1{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
-  background-color: lightblue;
+  background-color:#367588 ;  
 }
 
 .seller{
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom:3rem ;
+  padding: 3rem;
 }
 
 .Tips{
@@ -219,6 +228,63 @@
 .icons{
   text-align: center;
 }
+
+.discover{
+  color: blue;
+  font-size:3rem;
+  padding-left: 3rem;
+}
+   
+.goods{
+  padding-left: 20rem;
+}
+   
+.btn_explore{
+   color: white;
+  background: blue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.btn_explore:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+   
+.explore{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+}
+   
+.ecommerce{
+  margin-left: 1rem;
+}
+
+.marketItem{
+  margin: 7rem;
+}
+
+.Benefits {
+  display: grid;
+ grid-template-columns: 33%  33% 33%;
+}
+
+.icons{
+  display:grid;
+ grid-template-columns: 50% 50%;
+}
+
+.why{
+  display:flex;
+  flex-direction: row;
+}
+
 
 .product-div{
   height: 100vh;
@@ -243,5 +309,3 @@
 .addlistings{
   margin: 0 auto;
 }
-
-

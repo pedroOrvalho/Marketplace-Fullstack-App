@@ -6,16 +6,16 @@ import Marketplacelogo from "../images/Marketplace Logo.png"
 export default function Navbar() {
   return (
     <div className="navbar">
-      <div>
+      <div className="logo">
         <img
           className="marketlogo"
           src={Marketplacelogo}
           alt="logo"
           style={{ width: 50 }}
         />
-        <span className="marketplace1">
-          Marketplace
-        </span>
+        <Link to="/">
+          <span className="marketplace1">Marketplace</span>
+        </Link>
       </div>
 
       <div className="menu">
