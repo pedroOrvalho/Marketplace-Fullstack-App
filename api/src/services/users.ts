@@ -18,3 +18,21 @@ export const findUserByEmailService = async (
       throw new NotFoundError(`Could not find user with email in the database.`);
     }
   };
+
+  export const findOrCreate = async (
+    payload: Partial<UserDocument>
+  ): Promise<UserDocument> => {
+    const result = await User.findOne({ email: payload.email });
+    // find user by email from database
+    if (result) {
+      return result;
+    } else {
+      const user = new User({
+        email: payload.email,
+        firstName: payload.firstName,
+        lastName: payload.lastName,
+      });
+      const createdUser = await user.save();
+      return createdUser;
+    }
+  };

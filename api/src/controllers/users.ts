@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 
-import Users from "../model/User";
+import Users, { UserDocument } from "../model/User";
 import { createUserService, findUserByEmailService } from "../services/users";
 import { UnauthorizedError } from "../helpers/apiErrors";
 
@@ -69,6 +69,36 @@ export const logInWithEmail = async (
       res.status(403).json({
         message: "You don't have an account yet, please register first.",
       });
+    }
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const loginWithGoogle = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    // how you can access the value from passport
+    // foundUser
+    // console.log(req, "request");
+    // request.body
+    const userData = req.user as UserDocument;
+    const token = jwt.sign(
+      {
+        email: userData.email,
+        _id: userData._id,
+      },
+      JWT_SECRET,
+      { expiresIn: "1h" }
+    );
+    if (!userData) {
+      res.json({ message: "can't find user with this email" });
+      return;
+    } else {
+      res.json({ token, userData });
     }
   } catch (error) {
     next(error);
