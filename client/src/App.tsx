@@ -9,6 +9,7 @@ import Login from "./pages/Registration/login";
 import Market from "./pages/marketplace/market";
 
 import "./App.css";
+import ProductList from "./pages/marketplace/Product";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/buying" element={<Buying />} />
         <Route path="/selling" element={<Selling />} />
         <Route path="/marketplace" element={<Market />} />
+        <Route path="/product" element={<ProductList />} />
       </Routes>
       <Footer />
     </div>
