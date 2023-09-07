@@ -22,3 +22,39 @@ if(!foundUserId){
 return foundUserId
 
 }
+
+export const getProductDetailsService = async (
+  productId: string
+): Promise<ProductDocument> => {
+  const foundUserId = await Products.findById(productId);
+  if (!foundUserId) {
+    throw new NotFoundError(`product with user ${productId} not found`);
+  }
+  return foundUserId;
+};
+
+export const updateProductservice=async(productId:string,
+   updateInfo:Partial<ProductDocument> )=>{
+    const foundUpdate = await Products.findByIdAndUpdate(
+      productId,
+      updateInfo,
+      { new: true }
+    );
+
+    if(!foundUpdate){
+        throw new NotFoundError(`product with ${productId} not found`)
+    }
+
+    return foundUpdate
+
+}
+
+export const deleteProductService=async(productId:string):Promise<ProductDocument>=>{
+
+    const foundedproduct= await Products.findByIdAndDelete(productId)
+    if(!foundedproduct){
+        throw new NotFoundError(`product with id ${productId} not found`)
+    }
+    return foundedproduct
+
+}
