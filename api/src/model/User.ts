@@ -30,7 +30,8 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true,
+  // this commented out because of google login that doesnt have password and gives error.
+  // required: true,
   },
   banned: {
     type: Boolean,
