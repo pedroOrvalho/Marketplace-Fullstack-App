@@ -5,6 +5,7 @@
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+
 }
 
 .navbar {
@@ -248,11 +249,14 @@
   padding-left: 0.5rem;
   border-radius: 12px;
   border: none;
+  font-size: 0.7rem;
 }
 
 .btn_explore:hover {
   cursor: pointer;
   opacity: 0.9;
+  
+
 }
 
 .explore {
@@ -280,9 +284,53 @@
   grid-template-columns: 50% 50%;
 }
 
-.why {
+.why{
+  color: blue;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.why_icons{
   display: flex;
   flex-direction: row;
+}
+.why_icons2{
+ display: flex;
+ 
+}
+
+.create_listing{
+padding-left:1rem;
+font-size: 0.7rem;
+}
+
+.connect {
+  padding-left: 4;
+}
+.blue{
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+align-items: stretch;
+
+  gap: 10rem;
+  
+}
+
+
+
+.unique{
+
+  flex-grow:3;
+  
+  
+}
+
+.button{
+  display: flex;
+  gap: 2rem;
 }
 
 .product-div {

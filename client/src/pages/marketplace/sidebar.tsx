@@ -31,7 +31,7 @@ export default function Market() {
           <Fab>
             <ShoppingCartIcon className="icon" />
           </Fab>
-          <Link to="/products">
+          <Link to="/marketplace/products">
             <Button> Buying</Button>
           </Link>
         </div>

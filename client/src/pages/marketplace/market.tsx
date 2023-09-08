@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import Sidebar from "./sidebar";
-import ProductList from "./products";
+import MarketProducts from "./products";
 import UserStore from "./store";
 
 export default function Market() {
@@ -10,8 +10,8 @@ export default function Market() {
       <Sidebar />
       <Routes>
        
-        <Route path="/market/products" element={<ProductList />} />
-        <Route path="/market/store" element={<UserStore />} />
+        <Route path="/marketplace" element={<MarketProducts />} />
+        <Route path="/marketplace" element={<UserStore />} />
       </Routes>
     </div>
   );
