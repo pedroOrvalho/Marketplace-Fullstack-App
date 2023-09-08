@@ -4,7 +4,12 @@ import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 
 import Users, { UserDocument } from "../model/User";
-import { createUserService, findUserByEmailService } from "../services/users";
+import {
+  createUserService,
+  findUserByEmailService,
+  updateUser,
+  deleteUserservice,
+} from "../services/users";
 import { UnauthorizedError } from "../helpers/apiErrors";
 
 dotenv.config();
@@ -100,6 +105,35 @@ export const loginWithGoogle = async (
     } else {
       res.json({ token, userData });
     }
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const updateUserInfo = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const userId = req.params.userId;
+    const newInfos = req.body;
+    const userInformation = await updateUser(userId, newInfos);
+    res.status(200).json(userInformation);
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const deleteUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const userId = req.params.userId;
+    const userdeleted = await deleteUserservice(userId);
+    res.status(200).json(userdeleted);
   } catch (error) {
     next(error);
   }
