@@ -32,6 +32,12 @@ export default function Navbar() {
               <button className="btn">Go to MarketPlace</button>
             </li>
           </Link>
+
+          <Link to="/product">
+            <li>
+              Product
+            </li>
+          </Link>
         </ul>
       </div>
     </div>
