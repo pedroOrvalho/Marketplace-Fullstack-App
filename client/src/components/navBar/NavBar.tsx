@@ -27,7 +27,7 @@ export default function Navbar() {
           <Link to="/selling">
             <li>Selling</li>
           </Link>
-          <Link to="/marketplace">
+          <Link to="/market">
             <li>
               <button className="btn">Go to MarketPlace</button>
             </li>

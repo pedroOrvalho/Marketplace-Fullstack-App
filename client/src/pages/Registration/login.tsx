@@ -162,6 +162,12 @@ export default function Signup() {
           </Paper>
         </Box>
       )}
+      <Button style={{display:"flex", gap:"10px"}}>
+        <h1>
+          <strong>G</strong>
+        </h1>
+        <p>Continue with gmail</p>
+      </Button>
     </div>
   );
 }

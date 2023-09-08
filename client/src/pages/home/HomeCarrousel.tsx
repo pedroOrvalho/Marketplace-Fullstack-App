@@ -1,5 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import  {Carousel}  from "react-responsive-carousel";
 
 import market from "../../images/market.jpg"
 import people from "../../images/people.jpg"
