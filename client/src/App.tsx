@@ -8,21 +8,21 @@ import Selling from "./pages/Selling";
 import Footer from "./components/Footer";
 import Market from "./pages/marketplace/market";
 import GoogleLogIn from "./components/googleLogIn/GoogleLogIn";
+import ProductList from "./pages/marketplace/Product";
 
 import "./App.css";
-import ProductList from "./pages/marketplace/Product";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/google-login" element={<GoogleLogIn />} />
         <Route path="/buying" element={<Buying />} />
         <Route path="/selling" element={<Selling />} />
-        <Route path="/marketplace" element={<Market />} />
-        <Route path="/google-login" element={<GoogleLogIn />} />
+        <Route path="/market" element={<Market />} />
         <Route path="/product" element={<ProductList />} />
       </Routes>
       <Footer />

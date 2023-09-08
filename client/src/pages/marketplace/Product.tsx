@@ -1,7 +1,4 @@
-
-
-
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { CircularProgress } from "@mui/material";
 
 import { useDispatch, useSelector } from "react-redux";

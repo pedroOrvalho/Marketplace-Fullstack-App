@@ -9,7 +9,6 @@ export default function Market() {
     <div className="market-div">
       <Sidebar />
       <Routes>
-       
         <Route path="/marketplace" element={<MarketProducts />} />
         <Route path="/marketplace" element={<UserStore />} />
       </Routes>
