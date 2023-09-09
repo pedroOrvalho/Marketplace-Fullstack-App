@@ -22,13 +22,6 @@ export default function AdminUser() {
     dispatch(fetchUserData());
   }, [dispatch]);
 
- // theme
-//   const theme = useSelector((state: RootState) => state.theme.theme);
-
-//   let backGroundColor;
-//   if (theme === "dark") {
-//     backGroundColor = "black";
-//   }
   let userList = users;
 
   if (isLoading) {
