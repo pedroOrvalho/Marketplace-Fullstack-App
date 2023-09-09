@@ -25,6 +25,7 @@ router.get(
 );
 
 router.get("/:productId", getProductDetails);
+
 router.get("/", getAllProducts);
 
 router.put(
