@@ -11,6 +11,7 @@ import GoogleLogIn from "./components/googleLogIn/GoogleLogIn";
 
 import "./App.css";
 import ProductList from "./pages/marketplace/Product";
+import UserItem from "./components/users/useritem";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/marketplace" element={<Market />} />
         <Route path="/google-login" element={<GoogleLogIn />} />
         <Route path="/product" element={<ProductList />} />
+        <Route path="/user" element={<UserItem />} />
       </Routes>
       <Footer />
     </div>
