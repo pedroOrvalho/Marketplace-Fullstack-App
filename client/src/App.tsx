@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Market from "./pages/marketplace/market";
 import GoogleLogIn from "./components/googleLogIn/GoogleLogIn";
 import ProductList from "./pages/marketplace/Product";
+import UserItem from "./components/users/useritem";
 
 import "./App.css";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/selling" element={<Selling />} />
         <Route path="/market" element={<Market />} />
         <Route path="/product" element={<ProductList />} />
+        <Route path="/user" element={<UserItem />} />
       </Routes>
       <Footer />
     </div>
