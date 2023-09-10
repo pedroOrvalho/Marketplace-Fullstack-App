@@ -1,8 +1,8 @@
-import HomeCarrousel from "../../components/Home/HomeCarrousel";
-import HomeBanner from "../../components/Home/HomeBanner";
+import HomeCarrousel from "../components/Home/HomeCarrousel";
+import HomeBanner from "../components/Home/HomeBanner";
+import HomeInfo from "../components/Home/HomeInfo";
 
 import { Box } from "@mui/material";
-import HomeInfo from "../../components/Home/HomeInfo";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
     >
       <HomeBanner />
       <HomeCarrousel />
-      <HomeInfo/>
+      <HomeInfo />
     </Box>
   );
 }
