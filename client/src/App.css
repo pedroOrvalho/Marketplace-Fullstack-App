@@ -120,7 +120,6 @@
 .home_info_text_container {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
 }
 
 .home_info_text_container h1 {
@@ -143,7 +142,7 @@
   align-items: center;
   text-align: center;
   color: rgba(39, 87, 207, 0.931);
-  padding: 0 1vw;
+  padding: 2rem 1vw;
 }
 
 .home_info_icon h3 {
