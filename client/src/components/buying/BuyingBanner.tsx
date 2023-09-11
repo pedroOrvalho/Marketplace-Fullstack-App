@@ -19,7 +19,7 @@ export default function BuyingBanner() {
         </h2>
         <div className="buyingPage_banner_button_container">
         <Link to="/market">
-          <button className="btn_buying">Browse Marketplace</button>
+          <button className="btn_selling">Browse Marketplace</button>
         </Link>
         </div>
       </div>

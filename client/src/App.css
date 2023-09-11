@@ -128,7 +128,7 @@
   text-align: center;
 }
 
-.home_info_icons_container {
+.home_info_c_container {
   display: flex;
   margin: 0 5vw;
   padding-bottom: 3rem;
@@ -168,7 +168,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,7 +246,94 @@
 }
 
 /* --------------------------- SELLING  ---------------------------*/
+.sellingPage_container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(209, 76%, 70%, 0.34);
+}
 
+.sellingPage_banner_container {
+  height: 40rem;
+  background-image: url("./images/jacketman.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+  text-align: center;
+  color: rgb(238, 237, 237);
+}
+
+.sellingPage_banner_container h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.sellingPage_banner_container h2 {
+  padding: 3vw 0;
+  max-width: 40rem;
+}
+
+.btn_selling {
+  color: rgba(255, 255, 255, 0.91);
+  background: blue;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn_selling:hover {
+  cursor: pointer;
+  background: rgb(39, 39, 239);
+}
+
+.sellingIcons_container {
+  text-align: center;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.sellingIcons_info_container h2 {
+  margin: 0;
+  color: rgba(39, 87, 207, 0.931);
+  font-size: 3.5rem;
+  padding: 2rem;
+}
+
+.sellingIcons_info_container p {
+  margin: 0;
+  color: rgba(39, 87, 207, 0.931);
+  font-size: 2rem;
+  padding: 0 10vw;
+}
+
+.sellingIcons_grid_container {
+  padding: 0 5vw;
+}
+.sellingIcons_grid_container h2 {
+  padding: 4rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+  color: rgba(39, 87, 207, 0.931);
+}
+
+#sellingIcons {
+  width: 4rem;
+  height: 4rem;
+  color: rgba(39, 87, 207, 0.931);
+}
+
+.sellingIcons_grid_item h3 {
+  height: 2rem;
+}
 
 
 /* ---------------------------  ---------------------------*/
@@ -296,15 +382,6 @@
   padding-top: 2rem;
 }
 
-.buying_page1 {
-  background-image: url("./images/shoppingbags.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  text-align: center;
-  padding-top: 5rem;
-}
-
 .btn3 {
   cursor: pointer;
   color: white;
@@ -338,43 +415,6 @@
   border: none;
 }
 
-.selling {
-  background-image: url("./images/jacketman.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px;
-  text-align: center;
-  padding-top: 3rem;
-  color: white;
-}
-
-.interest_sell {
-  font-size: 2rem;
-}
-
-.sell-on {
-  font-size: 2rem;
-}
-
-.btn4 {
-  cursor: pointer;
-  color: white;
-  background: blue;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  border-radius: 12px;
-  border: none;
-}
-
-.selling_pages {
-  background-image: url("./images/shoppingbags.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  text-align: center;
-}
 
 .Footer {
   font-size: 10px;
@@ -388,27 +428,6 @@
   justify-content: space-evenly;
   list-style-type: none;
   background-color: #367588;
-}
-
-.seller {
-  text-align: center;
-  padding: 3rem;
-}
-
-.Tips {
-  text-align: center;
-}
-
-.images {
-  text-align: center;
-}
-.icons {
-  text-align: center;
-}
-
-.icons {
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 .create_listing {
