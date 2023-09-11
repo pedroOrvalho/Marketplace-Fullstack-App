@@ -233,7 +233,7 @@
 .buyingIcons_grid_container h2 {
   padding: 4rem;
   margin-bottom: 0;
-  font-size: 4rem;
+  font-size: 3rem;
   color: rgba(39, 87, 207, 0.931);
 }
 
@@ -246,6 +246,10 @@
 .buyingIcons_grid_item h3 {
   height: 2rem;
 }
+
+/* --------------------------- SELLING  ---------------------------*/
+
+
 
 /* ---------------------------  ---------------------------*/
 
