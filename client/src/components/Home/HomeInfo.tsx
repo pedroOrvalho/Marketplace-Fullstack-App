@@ -1,6 +1,7 @@
 import PanToolAltSharpIcon from "@mui/icons-material/PanToolAltSharp";
 import PublicSharpIcon from "@mui/icons-material/PublicSharp";
 import ChatBubbleOutlineSharpIcon from "@mui/icons-material/ChatBubbleOutlineSharp";
+import { Box } from "@mui/material";
 
 export default function HomeInfo() {
   return (
@@ -8,7 +9,10 @@ export default function HomeInfo() {
       <div className="home_info_text_container">
         <h1>Why people love Marketplace</h1>
       </div>
-      <div className="home_info_icons_container">
+      <Box
+        sx={{ display: { xs: "block", sm: "block", md: "block", lg: "flex" } }}
+        className="home_info_icons_container"
+      >
         <div className="home_info_icon">
           <PanToolAltSharpIcon
             sx={{
@@ -51,7 +55,7 @@ export default function HomeInfo() {
             Messenger
           </p>
         </div>
-      </div>
+      </Box>
     </div>
   );
 }
