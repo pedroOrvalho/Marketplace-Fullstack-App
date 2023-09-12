@@ -20,3 +20,11 @@ export type User = {
   password: string;
   banned: boolean;
 };
+
+export type Mockuser = {
+  _id: string;
+  fname: string;
+  lname: string;
+  email: string;
+  password: string;
+};

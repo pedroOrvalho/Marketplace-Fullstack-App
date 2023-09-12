@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Market from "./pages/marketplace/market";
 import GoogleLogIn from "./components/googleLogIn/GoogleLogIn";
 import ProductList from "./pages/marketplace/Product";
-import UserItem from "./components/users/useritem";
+import Admin from "./pages/users/admin";
 
 import "./App.css";
 
@@ -25,7 +25,7 @@ function App() {
         <Route path="/selling" element={<Selling />} />
         <Route path="/market" element={<Market />} />
         <Route path="/product" element={<ProductList />} />
-        <Route path="/user" element={<UserItem />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
       <Footer />
     </div>
