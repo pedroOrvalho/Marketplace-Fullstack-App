@@ -1,45 +1,36 @@
 import { Link } from "react-router-dom";
-import Marketplacelogo from "../../images/Marketplace Logo.png";
+import Marketplacelogo from "../../images/Logo-noBackground.png";
 
 export default function Navbar() {
   return (
-    <div className="navbar">
-      <div className="logo">
-        <img
-          className="marketlogo"
-          src={Marketplacelogo}
-          alt="logo"
-          style={{ width: 50 }}
-        />
+    <div className="navbar_container">
+      <div className="navbar_logo_container">
         <Link to="/">
-          <span className="marketplace1">Marketplace</span>
+          <img src={Marketplacelogo} alt="logo" width={"100px"} />
         </Link>
       </div>
-      <div className="menu">
-        <ul className="menu_1">
-          <Link to="/login">
-            <li>Login now</li>
-          </Link>
-          <Link to="/buying">
-            <li>Buying</li>
-          </Link>
-
-          <Link to="/selling">
-            <li>Selling</li>
-          </Link>
-          <Link to="/market">
-            <li>
-              <button className="btn">Go to MarketPlace</button>
-            </li>
-          </Link>
-
-          <Link to="/product">
-            <li>
-              Product
-            </li>
-          </Link>
-        </ul>
+      <div className="navbar_menu_container">
+        <Link to="/login">
+          <p>Login now</p>
+        </Link>
+        <Link to="/buying">
+          <p>Buying</p>
+        </Link>
+        <Link to="/selling">
+          <p>Selling</p>
+        </Link>
+        <Link to="/market">
+          <button className="btn">Go to MarketPlace</button>
+        </Link>
       </div>
     </div>
   );
 }
+
+
+/*
+
+        <Link to="/product">
+          <p>Product</p>
+        </Link>
+*/

@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/navBar/NavBar";
-import Home from "./pages/home/Home";
-import Login from "./pages/Registration/login";
+import Home from "./pages/Home";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 import Buying from "./pages/Buying";
 import Selling from "./pages/Selling";
 import Footer from "./components/Footer";
 import Market from "./pages/marketplace/market";
-import GoogleLogIn from "./components/googleLogIn/GoogleLogIn";
 import ProductList from "./pages/marketplace/Product";
 import Admin from "./pages/users/admin";
 
@@ -19,8 +19,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/google-login" element={<GoogleLogIn />} />
         <Route path="/buying" element={<Buying />} />
         <Route path="/selling" element={<Selling />} />
         <Route path="/market" element={<Market />} />
@@ -31,5 +31,7 @@ function App() {
     </div>
   );
 }
+
+/*  <Route path="/user" element={<UserItem />} /> */
 
 export default App;

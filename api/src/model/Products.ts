@@ -4,10 +4,9 @@ export type ProductDocument = Document & {
   description: string;
   category: string;
   price: number;
-  material: string[];
-  color: string;
   image: string[];
-  userId: mongoose.Types.ObjectId; // Reference to the User who added this product
+  userId: mongoose.Types.ObjectId;
+  sold: boolean;
 };
 const ProductSchema = new mongoose.Schema({
   title: {
@@ -26,20 +25,18 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  material: {
-    type: [String],
-  },
-  color: {
-    type: String,
-  },
   image: {
     type: [String],
     required: true,
   },
   userId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "user", // Reference to the User model
+    ref: "user",
     required: true,
   },
+  sold: {
+    type: Boolean,
+    default: false,
+  },
 });
-export default mongoose.model<ProductDocument>('Products', ProductSchema);
+export default mongoose.model<ProductDocument>("Products", ProductSchema);

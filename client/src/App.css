@@ -1,30 +1,326 @@
-.App {
-  text-align: center;
+.app {
+
+  background-color: hsl(215, 100%, 96%);
 }
 
-* {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+/* --------------------------- NAVBAR ---------------------------*/
 
-}
-
-.navbar {
+.navbar_container {
+  height: 5rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 0;
-  gap: 2rem;
-  background-color: grey;
+  justify-content: space-between;
+  padding: 0 7vw;
+  background-color: hsl(215, 100%, 96%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
-.marketlogo {
-  color: blue;
+.navbar_logo_container {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
 }
+
+.navbar_menu_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1vw;
+  padding-left: 20px;
+}
+
 .marketplace1 {
   position: absolute;
   padding-top: 1rem;
 }
+/* --------------------------- HOMEPAGE ---------------------------*/
+
+.home_container {
+  background-color: hsl(215, 100%, 96%);
+}
+
+.home_banner_container {
+  color: rgba(39, 87, 207, 0.931);
+  display: flex;
+  width: 100%;
+  height: 50rem;
+  background-image: url("./images/marketplace1.jpeg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.home_banner_text_container {
+  padding: 2.5vw 5vw;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.home_banner_text_container h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.home_banner_text_container h2 {
+  font-size: 1.7rem;
+  margin: 0;
+  padding-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.home_banner_button_container {
+  padding: 2rem 0;
+}
+
+.home_banner_text_container button {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btn_marketplace {
+  color: white;
+  background: blue;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.7rem;
+}
+
+.btn_marketplace:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.homeCarrousel_container {
+  padding: 0 5vw;
+}
+
+.home_info_container {
+  margin: 2.5rem 0;
+}
+
+.home_info_text_container {
+  display: flex;
+  justify-content: center;
+}
+
+.home_info_text_container h1 {
+  color: rgba(39, 87, 207, 0.931);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.home_info_c_container {
+  display: flex;
+  margin: 0 5vw;
+  padding-bottom: 3rem;
+  justify-content: space-between;
+}
+
+.home_info_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgba(39, 87, 207, 0.931);
+  padding: 2rem 1vw;
+}
+
+.home_info_icon h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.home_info_icon p {
+  margin: 0;
+}
+
+/* --------------------------- BUYING PAGE ---------------------------*/
+
+.buyingPage_container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(209, 76%, 70%, 0.34);
+}
+
+.buyingPage_banner_container {
+  height: 40rem;
+  background-image: url("./images/phones.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+  text-align: center;
+  color: rgb(238, 237, 237);
+}
+
+.buyingPage_banner_container h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.buyingPage_banner_container h2 {
+  padding: 3vw 0;
+  max-width: 40rem;
+}
+
+.btn_buying {
+  color: rgba(255, 255, 255, 0.91);
+  background: blue;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn_buying:hover {
+  cursor: pointer;
+  background: rgb(39, 39, 239);
+}
+
+.buyingIcons_container {
+  text-align: center;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.buyingIcons_info_container h2 {
+  margin: 0;
+  color: rgba(39, 87, 207, 0.931);
+  font-size: 3.5rem;
+  padding: 2rem;
+}
+
+.buyingIcons_info_container p {
+  margin: 0;
+  color: rgba(39, 87, 207, 0.931);
+  font-size: 2rem;
+  padding: 0 10vw;
+}
+
+.buyingIcons_grid_container {
+  padding: 0 5vw;
+}
+.buyingIcons_grid_container h2 {
+  padding: 4rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+  color: rgba(39, 87, 207, 0.931);
+}
+
+#buyingIcons {
+  width: 4rem;
+  height: 4rem;
+  color: rgba(39, 87, 207, 0.931);
+}
+
+.buyingIcons_grid_item h3 {
+  height: 2rem;
+}
+
+/* --------------------------- SELLING  ---------------------------*/
+.sellingPage_container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(209, 76%, 70%, 0.34);
+}
+
+.sellingPage_banner_container {
+  height: 40rem;
+  background-image: url("./images/jacketman.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+  text-align: center;
+  color: rgb(238, 237, 237);
+}
+
+.sellingPage_banner_container h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.sellingPage_banner_container h2 {
+  padding: 3vw 0;
+  max-width: 40rem;
+}
+
+.btn_selling {
+  color: rgba(255, 255, 255, 0.91);
+  background: blue;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn_selling:hover {
+  cursor: pointer;
+  background: rgb(39, 39, 239);
+}
+
+.sellingIcons_container {
+  text-align: center;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.sellingIcons_info_container h2 {
+  margin: 0;
+  color: rgba(39, 87, 207, 0.931);
+  font-size: 3.5rem;
+  padding: 2rem;
+}
+
+.sellingIcons_info_container p {
+  margin: 0;
+  color: rgba(39, 87, 207, 0.931);
+  font-size: 2rem;
+  padding: 0 10vw;
+}
+
+.sellingIcons_grid_container {
+  padding: 0 5vw;
+}
+.sellingIcons_grid_container h2 {
+  padding: 4rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+  color: rgba(39, 87, 207, 0.931);
+}
+
+#sellingIcons {
+  width: 4rem;
+  height: 4rem;
+  color: rgba(39, 87, 207, 0.931);
+}
+
+.sellingIcons_grid_item h3 {
+  height: 2rem;
+}
+
+/* ---------------------------  ---------------------------*/
 
 .side-bar {
   width: 100%;
@@ -32,7 +328,7 @@
   border-radius: 1px solid black;
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 3px 3px 2px rgb(214, 209, 209);
-  position:relative ;
+  position: relative;
 }
 
 .sidebar-item-div {
@@ -43,30 +339,12 @@
   margin-left: 8px;
 }
 
-.logo {
-  padding-right: 25rem;
-}
-
 .icon {
   border-radius: 50%;
   padding: 8px;
   background-color: rgb(203, 203, 203);
   box-shadow: 2px 1px 2px rgb(214, 209, 209);
   margin: 8px;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.menu_1 {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
 }
 
 .btn:hover {
@@ -84,49 +362,8 @@
   border: none;
 }
 
-.Buying {
-  background-image: url("./images/phones.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  text-align: center;
-  padding-top: 3rem;
-}
-
-.buy {
-  font-size: 2rem;
-}
-
-.house {
-  align-items: center;
-}
-
 .browse {
   padding-top: 2rem;
-}
-
-.btn_market {
-  color: white;
-  background: blue;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  border-radius: 12px;
-  border: none;
-}
-
-.marketplace {
-  padding-top: 5rem;
-}
-
-.buying_page1 {
-  background-image: url("./images/shoppingbags.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  text-align: center;
-  padding-top: 5rem;
 }
 
 .btn3 {
@@ -162,44 +399,6 @@
   border: none;
 }
 
-.selling {
-  background-image: url("./images/jacketman.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px;
-  text-align: center;
-  padding-top: 3rem;
-  color: white;
-}
-
-.interest_sell {
-  font-size: 2rem;
-}
-
-.sell-on {
-  font-size: 2rem;
-}
-
-.btn4 {
-  cursor: pointer;
-  color: white;
-  background: blue;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  border-radius: 12px;
-  border: none;
-}
-
-.selling_pages {
-  background-image: url("./images/shoppingbags.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  text-align: center;
-}
-
 .Footer {
   font-size: 10px;
   background-color: blue;
@@ -214,121 +413,28 @@
   background-color: #367588;
 }
 
-.seller {
-  text-align: center;
-  padding: 3rem;
-}
-
-.Tips {
-  text-align: center;
-}
-
-.images {
-  text-align: center;
-}
-.icons {
-  text-align: center;
-}
-
-.discover {
-  color: blue;
-  font-size: 3rem;
-  padding-left: 3rem;
-}
-
-.goods {
-  padding-left: 20rem;
-}
-
-.btn_explore {
-  color: white;
-  background: blue;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  border-radius: 12px;
-  border: none;
+.create_listing {
+  padding-left: 1rem;
   font-size: 0.7rem;
-}
-
-.btn_explore:hover {
-  cursor: pointer;
-  opacity: 0.9;
-  
-
-}
-
-.explore {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 2rem;
-}
-
-.ecommerce {
-  margin-left: 1rem;
-}
-
-.marketItem {
-  margin: 7rem;
-}
-
-.Benefits {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-
-.icons {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.why{
-  color: blue;
-  font-size: 3rem;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.why_icons{
-  display: flex;
-  flex-direction: row;
-}
-.why_icons2{
- display: flex;
- 
-}
-
-.create_listing{
-padding-left:1rem;
-font-size: 0.7rem;
 }
 
 .connect {
   padding-left: 4;
 }
-.blue{
+.blue {
   display: flex;
   flex-direction: row;
-justify-content: space-between;
-align-items: stretch;
+  justify-content: space-between;
+  align-items: stretch;
 
   gap: 10rem;
-  
 }
 
-
-
-.unique{
-
-  flex-grow:3;
-  
-  
+.unique {
+  flex-grow: 3;
 }
 
-.button{
+.button {
   display: flex;
   gap: 2rem;
 }
@@ -341,7 +447,6 @@ align-items: stretch;
   box-shadow: 1px 1px 1px 4px rgb(214, 209, 209);
 }
 
-
 .market-div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -349,10 +454,8 @@ align-items: stretch;
   gap: 10px;
 }
 .sidebar {
- grid-column:1 ; 
+  grid-column: 1;
 }
 .product {
- grid-column: 2/4 ;
+  grid-column: 2/4;
 }
-
-
