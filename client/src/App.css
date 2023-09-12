@@ -1,53 +1,38 @@
-.App {
-  text-align: center;
-}
+.app {
 
-* {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  background-color: hsl(215, 100%, 96%);
 }
 
 /* --------------------------- NAVBAR ---------------------------*/
 
-.navbar {
+.navbar_container {
+  height: 5rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 0;
-  gap: 2rem;
-  background-color: grey;
+  justify-content: space-between;
+  padding: 0 7vw;
+  background-color: hsl(215, 100%, 96%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
-.logo {
-  padding-right: 25rem;
+.navbar_logo_container {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
 }
 
-.menu {
+.navbar_menu_container {
   display: flex;
+  align-items: center;
   flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  gap: 1vw;
+  padding-left: 20px;
 }
 
 .marketplace1 {
   position: absolute;
   padding-top: 1rem;
 }
-
-.menu_1 {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 /* --------------------------- HOMEPAGE ---------------------------*/
 
 .home_container {
@@ -335,7 +320,6 @@
   height: 2rem;
 }
 
-
 /* ---------------------------  ---------------------------*/
 
 .side-bar {
@@ -414,7 +398,6 @@
   border-radius: 12px;
   border: none;
 }
-
 
 .Footer {
   font-size: 10px;

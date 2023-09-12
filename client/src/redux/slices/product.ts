@@ -6,7 +6,6 @@ type InitialState = {
   products: Product[];
   isLoading: boolean;
   searchProduct: [];
-
 };
 
 const initialState: InitialState = {

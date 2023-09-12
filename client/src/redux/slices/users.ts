@@ -19,7 +19,6 @@ const userSlice = createSlice({
   reducers: {
     getUserData: (state, action: PayloadAction<User[]>) => {
       state.users = action.payload;
-
       state.isLoading = false;
     },
 
