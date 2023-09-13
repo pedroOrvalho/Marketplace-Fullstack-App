@@ -1,7 +1,9 @@
-import { useState } from "react";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { GoogleLogin } from "@react-oauth/google";
+
+import { getUserLoginData } from "../../redux/slices/users";
 
 export type UserGoogle = {
   _id: string;
@@ -11,12 +13,8 @@ export type UserGoogle = {
 };
 
 export default function GoogleLogIn() {
-  const [userGoogle, setUserGoogle] = useState<UserGoogle>({
-    _id: "",
-    email: "",
-    firstName: "",
-    lastName: "",
-  });
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   return (
     <div className="googleLogin_container">
@@ -39,8 +37,11 @@ export default function GoogleLogIn() {
           // the credential with google is correct we receive the user information
           // and save it to setUserGoogle state.
           if (res.status === 200) {
-            console.log(res, "response from BE");
-            setUserGoogle(res.data.userData);
+            //console.log(res, "response from BE");
+            dispatch(getUserLoginData(res.data.userData));
+            localStorage.setItem("userGoggleToken", res.data.token);
+            localStorage.setItem("_id", res.data.userData._id);
+            navigate("/");
           } else {
             alert("Login false");
           }

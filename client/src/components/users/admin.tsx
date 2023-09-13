@@ -9,9 +9,9 @@ import { Box } from "@mui/material";
 import UserItem from "./useritem";
 
 export default function AdminUser() {
-  const users = useSelector((state: RootState) => state.users.users);
+  const users = useSelector((state: RootState) => state.users.allUsers);
   const searchUsers = useSelector(
-    (state: RootState) => state.users.searchUser
+    (state: RootState) => state.users.searchUsers
   );
 
   const isLoading = useSelector((state: RootState) => state.users.isLoading);

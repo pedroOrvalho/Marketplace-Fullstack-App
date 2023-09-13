@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 
+import {getUserLoginData} from "../redux/slices/users"
+
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -53,7 +55,7 @@ export default function Login() {
       .post(endpoint, userInfo)
       .then((res) => {
         if (res.status === 200) {
-          //  dispatch(getUserInfo(res.data.userData));
+          dispatch(getUserLoginData(res.data.userData));
           localStorage.setItem("userToken", res.data.token);
           localStorage.setItem("_id", res.data.userData._id);
           navigate("/");
@@ -70,7 +72,7 @@ export default function Login() {
   }
 
   return (
-    <Container component="main" maxWidth="xs" sx={{ p: "7rem 0" }}>
+    <Container component="main" maxWidth="xs" sx={{ p: "3rem 0" }}>
       <CssBaseline />
       <Box
         sx={{

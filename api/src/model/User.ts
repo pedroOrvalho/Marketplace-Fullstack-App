@@ -7,7 +7,6 @@ export type UserDocument = Document & {
   email: string;
   password: string;
   banned: boolean;
-  
 };
 
 const UserSchema = new mongoose.Schema({
