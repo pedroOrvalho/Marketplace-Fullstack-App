@@ -26,7 +26,7 @@ export default function AdminUser() {
   let userList = users;
 
   if (isLoading) {
-    return <p>loading</p>;
+    return <p>Loading user list....</p>;
   }
   if (searchUsers.length > 0) {
     userList = searchUsers;

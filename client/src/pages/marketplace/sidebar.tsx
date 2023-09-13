@@ -1,4 +1,4 @@
-import { TextField, Box, Divider,Typography, Stack, Chip } from "@mui/material";
+import { TextField, Box, Divider, Stack, Chip } from "@mui/material";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -44,7 +44,7 @@ export default function Market() {
           <Fab size="small" href="/products">
             <ShoppingCartIcon className="icon" />
           </Fab>
-          <Link to="/marketplace/products">
+          <Link to="/products" className="link">
             <p> Buying</p>
           </Link>
         </div>
@@ -52,16 +52,23 @@ export default function Market() {
           <Fab size="small" href="/store">
             <StoreIcon className="icon" />
           </Fab>
-          <Link to="/store">
+          <Link to="/store" className="link">
             <p> Selling</p>
           </Link>
         </div>
 
-        <div style={{ display: "flex" }}>
+        <div
+          style={{
+            display: "flex",
+            backgroundColor: "#0898DC",
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
           <Fab href="/store" size="small" aria-label="add" color="primary">
             <AddIcon />
           </Fab>
-          <p>Create new listing</p>
+          <p style={{ color: "white" }}>Create new listing</p>
         </div>
 
         <Divider variant="middle" />
@@ -106,9 +113,11 @@ export default function Market() {
           <Fab size="small">
             <CableIcon className="icon" />
           </Fab>
-
           <p>Electronics</p>
         </div>
+        <Link to="/admin">
+          <p>admin Dashboard</p>
+        </Link>
       </div>
     </div>
   );

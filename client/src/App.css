@@ -2,6 +2,10 @@
 
   background-color: hsl(215, 100%, 96%);
 }
+.link{
+  text-decoration: none;
+  color: black
+}
 
 
 /* --------------------------- NAVBAR ---------------------------*/
@@ -345,11 +349,13 @@
 .sidebar-item-div {
   display: flex;
   align-items: center;
-  margin-left: 8px;
-  width: 60%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
 }
-
+.sidebar-item-div:hover{
+  background-color: #DDE5F0;
+  
+}
 
 .btn:hover {
   cursor: pointer;
