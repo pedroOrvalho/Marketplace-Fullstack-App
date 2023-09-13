@@ -3,8 +3,7 @@ import { productActions } from "../slices/product";
 
 export function fetchProductData() {
   const productUrl = "http://localhost:7000/product";
-return async (dispatch: AppDispatch) => {
-    
+  return async (dispatch: AppDispatch) => {
     const response = await fetch(productUrl);
     const productData = await response.json();
 

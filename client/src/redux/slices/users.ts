@@ -2,36 +2,40 @@ import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { User } from "../../components/types/type";
 
 type InitialState = {
-  users: User[];
+  userLoginData: User | null;
+  allUsers: User[];
   isLoading: boolean;
-  searchUser: [];
+  searchUsers: User[];
 };
 
 const initialState: InitialState = {
-  users: [],
+  userLoginData: null,
+  allUsers: [],
   isLoading: true,
-  searchUser: [],
+  searchUsers: [],
 };
 
 const userSlice = createSlice({
   name: "users",
   initialState,
   reducers: {
-    getUserData: (state, action: PayloadAction<User[]>) => {
-      state.users = action.payload;
+    getUserLoginData: (state, action: PayloadAction<User>) => {
+      state.userLoginData = action.payload;
+    },
+    getAllUsersData: (state, action: PayloadAction<User[]>) => {
+      state.allUsers = action.payload;
       state.isLoading = false;
     },
-
-    SearchUsers: (state, action: PayloadAction<string>) => {
-      const result = state.users.filter((item) =>
+    searchUsers: (state, action: PayloadAction<string>) => {
+      const result = state.allUsers.filter((item) =>
         item.email.toLowerCase().includes(action.payload.toLowerCase())
       );
-      state.users = result;
+      state.searchUsers = result;
     },
   },
 });
-export const UserActions = userSlice.actions;
 
+export const { getAllUsersData, getUserLoginData, searchUsers } =
+  userSlice.actions;
 const userReducer = userSlice.reducer;
-
 export default userReducer;
