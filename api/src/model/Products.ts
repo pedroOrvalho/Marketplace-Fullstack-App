@@ -1,4 +1,5 @@
 import mongoose, { Document } from "mongoose";
+
 export type ProductDocument = Document & {
   title: string;
   description: string;
@@ -8,6 +9,7 @@ export type ProductDocument = Document & {
   userId: mongoose.Types.ObjectId;
   sold: boolean;
 };
+
 const ProductSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -39,4 +41,5 @@ const ProductSchema = new mongoose.Schema({
     default: false,
   },
 });
+
 export default mongoose.model<ProductDocument>("Products", ProductSchema);

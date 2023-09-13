@@ -3,6 +3,7 @@
   background-color: hsl(215, 100%, 96%);
 }
 
+
 /* --------------------------- NAVBAR ---------------------------*/
 
 .navbar_container {
@@ -27,6 +28,11 @@
   flex-direction: row;
   gap: 1vw;
   padding-left: 20px;
+}
+
+#navbar_link{
+  text-decoration: none;
+  color: black;
 }
 
 .marketplace1 {

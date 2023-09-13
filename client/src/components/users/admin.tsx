@@ -10,9 +10,9 @@ import UserItem from "./useritem";
 import { Mockuser } from "../types/type";
 
 export default function AdminUser() {
-  const users = useSelector((state: RootState) => state.users.users);
+  const users = useSelector((state: RootState) => state.users.allUsers);
   const searchUsers = useSelector(
-    (state: RootState) => state.users.searchUser
+    (state: RootState) => state.users.searchUsers
   );
 
   const isLoading = useSelector((state: RootState) => state.users.isLoading);
