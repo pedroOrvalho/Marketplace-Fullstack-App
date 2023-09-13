@@ -1,8 +1,6 @@
 .app {
-
   background-color: hsl(215, 100%, 96%);
 }
-
 
 /* --------------------------- NAVBAR ---------------------------*/
 
@@ -150,7 +148,8 @@
 .buyingPage_container {
   display: flex;
   flex-direction: column;
-  background-color: hsla(209, 76%, 70%, 0.34);
+  background-color: hsl(215, 100%, 96%);
+
 }
 
 .buyingPage_banner_container {
@@ -240,7 +239,7 @@
 .sellingPage_container {
   display: flex;
   flex-direction: column;
-  background-color: hsla(209, 76%, 70%, 0.34);
+  background-color: hsl(215, 100%, 96%);
 }
 
 .sellingPage_banner_container {

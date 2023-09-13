@@ -1,15 +1,13 @@
-
- export type Product = {
+export type Product = {
   _id: string;
   title: string;
   description: string;
   category: string;
   price: number;
-  material: string[];
-  color: string;
-  image: string;
+  image: string[];
+  userId: string;
+  sold: boolean;
 };
-
 
 export type User = {
   _id: string;
