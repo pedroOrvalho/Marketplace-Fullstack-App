@@ -87,27 +87,27 @@ export default function Market() {
           <Fab size="small">
             <CheckroomIcon className="icon" />
           </Fab>
-          <Typography>Clothing</Typography>
+          <p>Clothing</p>
         </div>
         <div className="sidebar-item-div">
           <Fab size="small">
             <ChairIcon className="icon" />
           </Fab>
-          <Typography>Furniture</Typography>
+          <p>Furniture</p>
         </div>
         <div className="sidebar-item-div">
           <Fab size="small">
             <LocalGroceryStoreIcon className="icon" />
           </Fab>
 
-          <Typography>Groceries</Typography>
+          <p>Groceries</p>
         </div>
         <div className="sidebar-item-div">
           <Fab size="small">
             <CableIcon className="icon" />
           </Fab>
 
-          <Typography>Electronics</Typography>
+          <p>Electronics</p>
         </div>
       </div>
     </div>
