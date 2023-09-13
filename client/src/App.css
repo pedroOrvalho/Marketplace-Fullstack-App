@@ -30,6 +30,11 @@
   padding-left: 20px;
 }
 
+#navbar_link{
+  text-decoration: none;
+  color: black;
+}
+
 .marketplace1 {
   position: absolute;
   padding-top: 1rem;
