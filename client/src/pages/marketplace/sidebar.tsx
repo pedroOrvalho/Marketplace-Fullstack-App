@@ -1,4 +1,4 @@
-import { TextField, Box, Divider, Stack, Chip } from "@mui/material";
+import { TextField, Box, Divider,Typography, Stack, Chip } from "@mui/material";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -87,27 +87,27 @@ export default function Market() {
           <Fab size="small">
             <CheckroomIcon className="icon" />
           </Fab>
-          <p>clothing</p>
+          <Typography>Clothing</Typography>
         </div>
         <div className="sidebar-item-div">
           <Fab size="small">
             <ChairIcon className="icon" />
           </Fab>
-          <p>Furniture</p>
+          <Typography>Furniture</Typography>
         </div>
         <div className="sidebar-item-div">
           <Fab size="small">
             <LocalGroceryStoreIcon className="icon" />
           </Fab>
 
-          <p>Groceries</p>
+          <Typography>Groceries</Typography>
         </div>
         <div className="sidebar-item-div">
           <Fab size="small">
             <CableIcon className="icon" />
           </Fab>
 
-          <p>Electronics</p>
+          <Typography>Electronics</Typography>
         </div>
       </div>
     </div>
