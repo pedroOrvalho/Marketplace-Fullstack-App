@@ -12,7 +12,7 @@ export default function ProductItem({item}: Prop) {
   return (
     <div>
       <img
-        src= {item.image}
+        src= {item.image[0]}
         alt=""
         style={{height:"200"}}
       />

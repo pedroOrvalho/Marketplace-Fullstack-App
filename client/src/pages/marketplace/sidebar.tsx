@@ -1,4 +1,4 @@
-import { TextField, Button, Divider } from "@mui/material";
+import { TextField, Box, Divider,Typography, Stack, Chip } from "@mui/material";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -8,82 +8,106 @@ import CheckroomIcon from "@mui/icons-material/Checkroom";
 import ChairIcon from "@mui/icons-material/Chair";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import CableIcon from "@mui/icons-material/Cable";
+
+import {useState} from "react"
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { productActions } from "../../redux/slices/product";
+
 
 export default function Market() {
+
+  //*************** product Search***************/
+  const dispatch = useDispatch();
+  const [userInput, setUserInput] = useState("");
+  function onChangeHandler(event: React.ChangeEvent<HTMLInputElement>) {
+    setUserInput(event.target.value);
+    dispatch(productActions.SearchProduct(userInput));
+  }
+ 
+
   return (
     <div>
       <div className="side-bar">
         <h2>MarketPlace</h2>
         <TextField
-          style={{
-            width: "90%",
-            marginBottom: "18px",
-          }}
+          sx={{ width: 250, marginBottom: 1 }}
+          className="productsearch"
           size="small"
           id="filled-search"
           label="Search field"
           type="search"
           variant="filled"
+          onChange={onChangeHandler}
         />
         <div className="sidebar-item-div">
-          <Fab>
+          <Fab size="small" href="/products">
             <ShoppingCartIcon className="icon" />
           </Fab>
           <Link to="/marketplace/products">
-            <Button> Buying</Button>
+            <p> Buying</p>
           </Link>
         </div>
         <div className="sidebar-item-div">
-          <Fab>
+          <Fab size="small" href="/store">
             <StoreIcon className="icon" />
           </Fab>
           <Link to="/store">
-            <Button> Selling</Button>
+            <p> Selling</p>
           </Link>
         </div>
 
-        <div>
-          <Fab size="small" color="secondary" aria-label="add">
+        <div style={{ display: "flex" }}>
+          <Fab href="/store" size="small" aria-label="add" color="primary">
             <AddIcon />
           </Fab>
-          <Button>Create new listing</Button>
+          <p>Create new listing</p>
         </div>
 
         <Divider variant="middle" />
-
         <div className="sidebar-item-div">
           <FilterListIcon />
           <h3> Flters</h3>
         </div>
-        <div>....</div>
+        <div>
+          <Box sx={{ m: 2 }}>
+            <Stack direction="row" spacing={1}>
+              <Chip label="price" />
+              <Chip color="primary" label="size" />
+              <Chip label="location" />
+              <Chip label="title" />
+            </Stack>
+          </Box>
+        </div>
+
         <Divider variant="middle" />
+
         <h3> Categories</h3>
         <div className="sidebar-item-div">
-          <Fab>
+          <Fab size="small">
             <CheckroomIcon className="icon" />
           </Fab>
-          <Button>clothing</Button>
+          <Typography>Clothing</Typography>
         </div>
         <div className="sidebar-item-div">
-          <Fab>
+          <Fab size="small">
             <ChairIcon className="icon" />
           </Fab>
-          <Button>Furniture</Button>
+          <Typography>Furniture</Typography>
         </div>
         <div className="sidebar-item-div">
-          <Fab>
+          <Fab size="small">
             <LocalGroceryStoreIcon className="icon" />
           </Fab>
 
-          <Button>Groceries</Button>
+          <Typography>Groceries</Typography>
         </div>
         <div className="sidebar-item-div">
-          <Fab>
+          <Fab size="small">
             <CableIcon className="icon" />
           </Fab>
 
-          <Button>Electronics</Button>
+          <Typography>Electronics</Typography>
         </div>
       </div>
     </div>

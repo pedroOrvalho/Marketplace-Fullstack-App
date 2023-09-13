@@ -1,16 +1,18 @@
 import { User } from "../types/type";
+import { Mockuser } from "../types/type";
 
 type Prop = {
-  item: User;
+  user: Mockuser;
 };
 
-export default function UserItem({ item }: Prop) {
-  const user = item;
+
+export default function UserItem({ user }:Prop) {
+;
   return (
       <div>
           <h3>user</h3>
       <div>
-        <p>{user.firstName}</p>
+        <p>{user.fname}</p>
       </div>
       <div>
         <p>{user.email}</p>
@@ -19,3 +21,5 @@ export default function UserItem({ item }: Prop) {
     </div>
   );
 }
+
+

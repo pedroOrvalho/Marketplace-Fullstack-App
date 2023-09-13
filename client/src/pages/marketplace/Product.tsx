@@ -3,7 +3,7 @@ import { CircularProgress } from "@mui/material";
 
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../redux/store";
-import { fetchProductData } from "../../redux/thunk/product";
+import { fetchAllProductsData } from "../../redux/thunk/product";
 import ProductItem from "./ProductItem";
 
 
@@ -13,7 +13,7 @@ const isLoading = useSelector((state: RootState) => state.products.isLoading);
 const dispatch = useDispatch<AppDispatch>();
 
 useEffect(() => {
-  dispatch(fetchProductData());
+  dispatch(fetchAllProductsData());
 }, [dispatch]);
 
 console.log( products ," products")
