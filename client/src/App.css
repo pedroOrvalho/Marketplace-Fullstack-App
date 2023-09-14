@@ -28,15 +28,26 @@
   padding-left: 20px;
 }
 
-#navbar_link{
+#navbar_link {
   text-decoration: none;
   color: black;
 }
 
-.marketplace1 {
-  position: absolute;
-  padding-top: 1rem;
+.btn:hover {
+  cursor: pointer;
 }
+
+.btn {
+  color: white;
+  background: blue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 12px;
+  border: none;
+}
+
 /* --------------------------- HOMEPAGE ---------------------------*/
 
 .home_container {
@@ -149,7 +160,6 @@
   display: flex;
   flex-direction: column;
   background-color: hsl(215, 100%, 96%);
-
 }
 
 .buyingPage_banner_container {
@@ -325,82 +335,50 @@
   height: 2rem;
 }
 
-/* ---------------------------  ---------------------------*/
+/* --------------------------- SideBar ---------------------------*/
 
-.side-bar {
-  width: 100%;
-  height: 100vh;
-  border-radius: 1px solid black;
-  border: 1px solid rgb(255, 255, 255);
-  box-shadow: 3px 3px 2px rgb(214, 209, 209);
-  position: relative;
+.sideBar_container {
+  width: 20rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: center;
   font-family: "Montserrat", sans-serif;
 }
 
 .sidebar-item-div {
   display: flex;
-  align-items: center;
-  margin-left: 8px;
-  width: 60%;
-  justify-content: space-between;
 }
 
-
-.btn:hover {
-  cursor: pointer;
+/* --------------------------- MarketPlace ---------------------------*/
+.marketplace_container {
+  display: flex;
+  height: 50rem;
 }
 
-.btn {
-  color: white;
-  background: blue;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  border-radius: 12px;
-  border: none;
+.productList_container {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-.browse {
-  padding-top: 2rem;
+.productItem_text_container {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+  padding-bottom: 0
 }
-
-.btn3 {
-  cursor: pointer;
-  color: white;
-  background: blue;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  border-radius: 12px;
-  border: none;
+.productItem_text_container p {
+  margin: 5px;
+  font-weight: 700;
+  color: rgba(64, 63, 63, 0.865);
 }
-
-.buyingpage {
-  clip-path: 70%;
+.productItem_text{
+  text-decoration: none !important;
 }
-
-.buy_sell {
-  color: white;
-  font-size: 2rem;
-}
-
-.btn_sell {
-  cursor: pointer;
-  color: white;
-  background: blue;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  border-radius: 12px;
-  border: none;
-}
+/* --------------------------- Footer ---------------------------*/
 
 .Footer {
   font-size: 10px;
@@ -416,51 +394,4 @@
   justify-content: space-evenly;
   list-style-type: none;
   background-color: #367588;
-}
-
-.create_listing {
-  padding-left: 1rem;
-  font-size: 0.7rem;
-}
-
-.connect {
-  padding-left: 4;
-}
-.blue {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-
-  gap: 10rem;
-}
-
-.unique {
-  flex-grow: 3;
-}
-
-.button {
-  display: flex;
-  gap: 2rem;
-}
-
-.product-div {
-  height: 100vh;
-  width: 90%;
-  background-color: rgb(254, 254, 253);
-  border: 1px solid rgb(242, 235, 235);
-  box-shadow: 1px 1px 1px 4px rgb(214, 209, 209);
-}
-
-.market-div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: repeat(4);
-  gap: 10px;
-}
-.sidebar {
-  grid-column: 1;
-}
-.product {
-  grid-column: 2/4;
 }
