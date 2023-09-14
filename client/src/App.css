@@ -362,6 +362,22 @@
   overflow-x: hidden;
 }
 
+.productItem_text_container {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+  padding-bottom: 0
+}
+.productItem_text_container p {
+  margin: 5px;
+  font-weight: 700;
+  color: rgba(64, 63, 63, 0.865);
+}
+.productItem_text{
+  text-decoration: none !important;
+}
 /* --------------------------- Footer ---------------------------*/
 
 .Footer {
