@@ -1,7 +1,6 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { Product } from "../../components/types/type";
 
- 
 type InitialState = {
   products: Product[];
   isLoading: boolean;
