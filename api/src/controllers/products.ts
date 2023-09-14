@@ -15,14 +15,14 @@ export const CreateAllProducts = async (
   next: NextFunction
 ) => {
   try {
-    const { title, description, category, price, material, image } = req.body;
+    const { title, description, category, price, image } = req.body;
 
     const newProduct = new ProductModel({
       title,
       description,
       category,
       price,
-      material,
+      
       image,
       userId: req.params._id, // Associate the product with the user by their ID
     });

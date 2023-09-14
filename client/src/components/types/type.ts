@@ -4,8 +4,8 @@
   title: string;
   description: string;
   category: string;
-  price: number;
-  material: string[];
+  price: string;
+
   color: string;
   image: string;
 };

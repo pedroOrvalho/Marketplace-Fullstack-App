@@ -10,7 +10,7 @@ import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import CableIcon from "@mui/icons-material/Cable";
 import { Link } from "react-router-dom";
 
-export default function Market() {
+export default function Sidebar() {
   return (
     <div>
       <div className="side-bar">
@@ -47,7 +47,10 @@ export default function Market() {
           <Fab size="small" color="secondary" aria-label="add">
             <AddIcon />
           </Fab>
-          <Button>Create new listing</Button>
+          <Button>
+           <Link to="/create-listing">
+           Create new listing
+           </Link> </Button>
         </div>
 
         <Divider variant="middle" />
