@@ -14,18 +14,16 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { productActions } from "../../redux/slices/product";
 
-
 export default function Market() {
-
   //*************** product Search***************/
   const dispatch = useDispatch();
   const [userInput, setUserInput] = useState("");
+  
   function onChangeHandler(event: React.ChangeEvent<HTMLInputElement>) {
     setUserInput(event.target.value);
     dispatch(productActions.SearchProduct(userInput));
   }
  
-
   return (
     <div>
       <div className="side-bar">
@@ -61,9 +59,11 @@ export default function Market() {
           <Fab href="/store" size="small" aria-label="add" color="primary">
             <AddIcon />
           </Fab>
-          <p>Create new listing</p>
+          <Button>
+           <Link to="/create-listing">
+           Create new listing
+           </Link> </Button>
         </div>
-
         <Divider variant="middle" />
         <div className="sidebar-item-div">
           <FilterListIcon />
@@ -79,9 +79,7 @@ export default function Market() {
             </Stack>
           </Box>
         </div>
-
         <Divider variant="middle" />
-
         <h3> Categories</h3>
         <div className="sidebar-item-div">
           <Fab size="small">
@@ -99,14 +97,12 @@ export default function Market() {
           <Fab size="small">
             <LocalGroceryStoreIcon className="icon" />
           </Fab>
-
           <Typography>Groceries</Typography>
         </div>
         <div className="sidebar-item-div">
           <Fab size="small">
             <CableIcon className="icon" />
           </Fab>
-
           <Typography>Electronics</Typography>
         </div>
       </div>
