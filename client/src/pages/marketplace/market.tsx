@@ -4,6 +4,7 @@ import Sidebar from "./sidebar";
 import MarketProducts from "./products";
 import UserStore from "./store";
 
+
 export default function Market() {
   return (
     <div className="market-div">
@@ -11,6 +12,7 @@ export default function Market() {
       <Routes>
         <Route path="/marketplace" element={<MarketProducts />} />
         <Route path="/marketplace" element={<UserStore />} />
+        
       </Routes>
     </div>
   );

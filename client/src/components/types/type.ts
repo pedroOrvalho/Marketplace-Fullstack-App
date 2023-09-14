@@ -20,3 +20,16 @@ export type User = {
   password: string;
   banned: boolean;
 };
+
+
+export type Favorite = {
+  _id: string;
+  title: string;
+  description: string;
+  category: string;
+  price: number;
+  material: string[];
+  color: string;
+  image: string[];
+  quantity: number;
+};

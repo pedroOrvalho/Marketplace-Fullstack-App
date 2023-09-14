@@ -9,6 +9,7 @@ import ChairIcon from "@mui/icons-material/Chair";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import CableIcon from "@mui/icons-material/Cable";
 import { Link } from "react-router-dom";
+import FavoritesDrawer from "../../components/favorite/FavoritesDrawer";
 
 export default function Market() {
   return (
@@ -27,9 +28,16 @@ export default function Market() {
           variant="filled"
         />
         <div className="sidebar-item-div">
+          <Link to="/favorites">
+            <div style={{ position: "relative" }}>
+              <FavoritesDrawer />
+            </div>
+          </Link>
+
           <Fab>
             <ShoppingCartIcon className="icon" />
           </Fab>
+
           <Link to="/marketplace/products">
             <Button> Buying</Button>
           </Link>

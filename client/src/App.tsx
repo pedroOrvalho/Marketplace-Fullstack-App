@@ -11,6 +11,7 @@ import Market from "./pages/marketplace/market";
 import ProductList from "./pages/marketplace/Product";
 import UserItem from "./components/users/useritem";
 
+
 import "./App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/selling" element={<Selling />} />
         <Route path="/market" element={<Market />} />
         <Route path="/product" element={<ProductList />} />
+    
       </Routes>
       <Footer />
     </div>

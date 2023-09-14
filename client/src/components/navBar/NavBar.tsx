@@ -21,7 +21,11 @@ export default function Navbar() {
         </Link>
         <Link to="/market">
           <button className="btn">Go to MarketPlace</button>
+  
         </Link>
+
+
+        
       </div>
     </div>
   );

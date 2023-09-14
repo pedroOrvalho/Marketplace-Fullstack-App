@@ -17,7 +17,7 @@ export default function ProductItem({item}: Prop) {
         style={{height:"200"}}
       />
       <p>{item.title}</p>
-      <p>{item.price}</p>
+      <p>${item.price}</p>
       <p>{item.category}</p>
       <p>{item.description}</p>
     </div>
