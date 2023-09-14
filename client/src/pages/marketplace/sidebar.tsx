@@ -25,6 +25,7 @@ export default function Market() {
   //*************** product Search***************/
   const dispatch = useDispatch();
   const [userInput, setUserInput] = useState("");
+  
   function onChangeHandler(event: React.ChangeEvent<HTMLInputElement>) {
     setUserInput(event.target.value);
     dispatch(productActions.SearchProduct(userInput));
@@ -98,14 +99,12 @@ export default function Market() {
         <Fab size="small">
           <LocalGroceryStoreIcon className="icon" />
         </Fab>
-
         <Typography>Groceries</Typography>
       </div>
       <div className="sidebar-item-div">
         <Fab size="small">
           <CableIcon className="icon" />
         </Fab>
-
         <Typography>Electronics</Typography>
       </div>
     </div>

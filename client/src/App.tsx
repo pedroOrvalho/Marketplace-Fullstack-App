@@ -12,6 +12,8 @@ import ProductList from "./pages/marketplace/Product";
 import Admin from "./pages/users/admin";
 
 import "./App.css";
+import CreateListing from "./pages/userListing/CreateListing";
+import UsersPageListing from "./pages/userListing/UsersPageListing";
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
         <Route path="/selling" element={<Selling />} />
         <Route path="/market" element={<Market />} />
         <Route path="/product" element={<ProductList />} />
+        
+        <Route path="/create-listing" element={<CreateListing />} />
+        <Route path="/user-review" element={<UsersPageListing/>} />
+        
         <Route path="/admin" element={<Admin />} />
       </Routes>
       <Footer />
