@@ -10,16 +10,16 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="navbar_menu_container">
-        <Link to="/login">
+        <Link id="navbar_link" to="/login">
           <p>Login now</p>
         </Link>
-        <Link to="/buying">
+        <Link id="navbar_link" to="/buying">
           <p>Buying</p>
         </Link>
-        <Link to="/selling">
+        <Link id="navbar_link" to="/selling">
           <p>Selling</p>
         </Link>
-        <Link to="/market">
+        <Link id="navbar_link" to="/market">
           <button className="btn">Go to MarketPlace</button>
         </Link>
       </div>

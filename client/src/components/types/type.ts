@@ -1,15 +1,13 @@
-
- export type Product = {
+export type Product = {
   _id: string;
   title: string;
   description: string;
   category: string;
-  price: string;
-
-  color: string;
-  image: string;
+  price: number;
+  image: string[];
+  userId: string;
+  sold: boolean;
 };
-
 
 export type User = {
   _id: string;
@@ -20,3 +18,12 @@ export type User = {
   password: string;
   banned: boolean;
 };
+
+export type Mockuser = {
+  _id: string;
+  fname: string;
+  lname: string;
+  email: string;
+  password: string;
+};
+
