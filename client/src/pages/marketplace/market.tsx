@@ -1,16 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 
 import Sidebar from "./sidebar";
-import MarketProducts from "./products";
-import UserStore from "./store";
+import ProductList from "./Product";
 
 export default function Market() {
   return (
-    <div className="market-div">
+    <div className="marketplace_container">
       <Sidebar />
       <Routes>
-        <Route path="/marketplace" element={<MarketProducts />} />
-        <Route path="/marketplace" element={<UserStore />} />
+        <Route path="/" element={<ProductList />} />
       </Routes>
     </div>
   );
