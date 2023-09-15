@@ -16,19 +16,23 @@ export default function UsersPageListing() {
   const [userInput, setUserInput]=useState<Product>({
     _id:"",
     title:"",
-    price:"",
+    price:123,
     category:"",
-    image:"",
+    image:[""],
     description:"",
-    color:""
+    userId:"",
+    sold:true
+
   })
+
+    //  color: [""];
 
 const changeTitle=(event:React.ChangeEvent<HTMLInputElement>)=>{
   setUserInput({...userInput, title:event.target.value})
 }
 const changePrice=(event:React.ChangeEvent<HTMLInputElement>)=>{
 setUserInput({
-  ...userInput, price:event.target.value
+  ...userInput, price:parseInt(event.target.value)
 })
 }
 const changeCategory=(event:React.ChangeEvent<HTMLInputElement >)=>{
@@ -45,7 +49,7 @@ if(file){
   reader.onload=()=>{
     const base64Image= reader.result as string
 
-    setUserInput({...userInput, image:base64Image})
+    setUserInput({...userInput, image:[base64Image]})
   }
 }
 
@@ -57,11 +61,13 @@ if(file){
     setUserInput({
       _id: "",
       title: "",
-      price: "",
+      price: 123,
       category: "",
-      image: "",
+      image: [],
       description: "",
-      color: "",
+      userId:"",
+      sold:true
+     
     });
   };
   return (
@@ -83,7 +89,7 @@ if(file){
               <div>
                 <h2>Preview Image before uploading</h2>
                 <div className="Image-preview">
-                  <img src={item.image} alt="cloth" width={450} />
+                  <img src={item.image[0]} alt="cloth" width={450} />
                 </div>
               </div>
               <div>

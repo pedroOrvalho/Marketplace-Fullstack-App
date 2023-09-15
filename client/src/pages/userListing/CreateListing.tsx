@@ -1,10 +1,9 @@
-import React from 'react'
-import Sidebar from '../marketplace/sidebar';
-import "./style.css"
-import cars from "../../images/cars.jpg"
-import ChooseAList from '../../components/create-listing/ChooseAList';
-import ChooseSecondListing from '../../components/create-listing/ChooseSecondListing';
-
+import React from "react";
+import Sidebar from "../marketplace/sidebar";
+import "./style.css";
+import cars from "../../images/cars.jpg";
+import ChooseAList from "../../components/create-listing/ChooseAList";
+import ChooseSecondListing from "../../components/create-listing/ChooseSecondListing";
 
 export default function CreateListing() {
   return (
@@ -13,9 +12,9 @@ export default function CreateListing() {
       <div className="create-listing-mainPage">
         <div>
           <h2>choose listing type</h2>
-          <div className='choose-list-type'>
+          <div className="choose-list-type">
             <ChooseAList />
-            <ChooseSecondListing  />
+            <ChooseSecondListing />
           </div>
         </div>
       </div>
