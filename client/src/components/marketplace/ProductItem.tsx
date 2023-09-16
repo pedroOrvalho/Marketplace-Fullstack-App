@@ -8,7 +8,7 @@ type Prop = {
 
 export default function ProductItem({ item }: Prop) {
   return (
-    <Link to={`/${item._id}`}>
+    <Link to={`/marketplace/${item._id}`}>
       <Box
         sx={{
           padding: 2,

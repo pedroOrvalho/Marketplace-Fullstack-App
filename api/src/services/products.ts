@@ -7,11 +7,11 @@ export const createProductService = async (
   return products.save();
 };
 
-export const getProductService = async (): Promise<ProductDocument[]> => {
+export const getAllProductstService = async (): Promise<ProductDocument[]> => {
   return await Products.find();
 };
 
-export const getProductsByUserId = async (
+export const getAllProductsByUserIdService = async (
   userId: string
 ): Promise<ProductDocument[]> => {
   const foundUserId = await Products.find({ userId: userId });
@@ -21,32 +21,30 @@ export const getProductsByUserId = async (
   return foundUserId;
 };
 
-export const getProductDetailsService = async (
+export const getProductByIdService = async (
   productId: string
 ): Promise<ProductDocument> => {
-  const foundUserId = await Products.findById(productId);
-  if (!foundUserId) {
+  const foundProductById = await Products.findById(productId);
+  if (!foundProductById) {
     throw new NotFoundError(`product with user ${productId} not found`);
   }
-  return foundUserId;
+  return foundProductById;
 };
 
-export const updateProductservice = async (
+export const updateProductByIdService = async (
   productId: string,
   updateInfo: Partial<ProductDocument>
 ) => {
   const foundUpdate = await Products.findByIdAndUpdate(productId, updateInfo, {
     new: true,
   });
-
   if (!foundUpdate) {
     throw new NotFoundError(`product with ${productId} not found`);
   }
-
   return foundUpdate;
 };
 
-export const deleteProductService = async (
+export const deleteProductByIdService = async (
   productId: string
 ): Promise<ProductDocument> => {
   const foundedproduct = await Products.findByIdAndDelete(productId);

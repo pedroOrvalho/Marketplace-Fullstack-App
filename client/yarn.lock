@@ -2332,6 +2332,13 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/fslightbox-react@^1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@types/fslightbox-react/-/fslightbox-react-1.7.4.tgz#bc77775ff73dd4d27ae99b7c14f2f7e23199663b"
+  integrity sha512-SlP/3d/qIF6TpslYiGpxxM5y9sZIA01l6bNc8NNpYeZ7POzlmJqRcpYn41PO4Mp6CFsUyiGMYNuRnEZX+H+eNw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/graceful-fs@^4.1.2":
   version "4.1.6"
   resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.6.tgz#e14b2576a1c25026b7f02ede1de3b84c3a1efeae"

@@ -368,24 +368,29 @@
   flex-direction: column;
   justify-content: center;
   padding: 10px 10px;
-  padding-bottom: 0
+  padding-bottom: 0;
 }
 .productItem_text_container p {
   margin: 5px;
   font-weight: 700;
   color: rgba(64, 63, 63, 0.865);
 }
-.productItem_text{
+.productItem_text {
   text-decoration: none !important;
+}
+
+/* --------------------------- ProductDetail ---------------------------*/
+
+.productDetail_slider_container {
+  display: flex;
 }
 /* --------------------------- Footer ---------------------------*/
 
 .footer_container {
-  font-size: 10px;
+  font-size: 12px;
   background-color: blue;
   color: white;
-  height: 12rem;
- 
+  height: 15rem;
 }
 
 .footer_links {

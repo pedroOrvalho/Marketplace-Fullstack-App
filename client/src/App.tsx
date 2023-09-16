@@ -8,6 +8,7 @@ import Buying from "./pages/Buying";
 import Selling from "./pages/Selling";
 import Footer from "./components/Footer";
 import MarketPlace from "./pages/MarketPlace";
+import ProductDetail from "./pages/ProductDetail";
 
 import "./App.css";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/buying" element={<Buying />} />
         <Route path="/selling" element={<Selling />} />
         <Route path="/marketplace" element={<MarketPlace />} />
+        <Route path="/marketplace/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </div>

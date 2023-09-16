@@ -2,14 +2,14 @@ import { NextFunction, Request, Response } from "express";
 import ProductModel from "../model/Products";
 import {
   createProductService,
-  getProductsByUserId,
-  getProductService,
-  getProductDetailsService,
-  updateProductservice,
-  deleteProductService
+  getAllProductsByUserIdService,
+  getAllProductstService,
+  getProductByIdService,
+  updateProductByIdService,
+  deleteProductByIdService
 } from "../services/products";
 
-export const CreateAllProducts = async (
+export const createProduct = async (
   req: Request,
   res: Response,
   next: NextFunction
@@ -39,7 +39,7 @@ export const getAllProducts = async (
   next: NextFunction
 ) => {
   try {
-    const products = await getProductService();
+    const products = await getAllProductstService();
 
     res.status(200).json(products);
   } catch (error) {
@@ -54,28 +54,28 @@ export const getAllProductByUserId = async (
 ) => {
   try {
     const userId = req.params.userId;
-    const productById = await getProductsByUserId(userId);
+    const productById = await getAllProductsByUserIdService(userId);
     res.status(200).json(productById);
   } catch (error) {
     next(error);
   }
 };
 
-export const getProductDetails = async (
+export const getProductById = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   try {
     const productId = req.params.productId;
-    const productById = await getProductDetailsService(productId);
+    const productById = await getProductByIdService(productId);
     res.status(200).json(productById);
   } catch (error) {
     next(error);
   }
 };
 
-export const updateProduct = async (
+export const updateProductById = async (
   req: Request,
   res: Response,
   next: NextFunction
@@ -84,21 +84,21 @@ export const updateProduct = async (
     const productId = req.params.productId;
     const updateInfo = req.body;
 
-    const product = await updateProductservice(productId, updateInfo);
+    const product = await updateProductByIdService(productId, updateInfo);
     res.status(200).json(product);
   } catch (error) {
     next(error);
   }
 };
 
-export const deleteProduct = async (
+export const deleteProductById = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   try {
     const productId = req.params.productId;
-    const productDeleted = await deleteProductService(productId);
+    const productDeleted = await deleteProductByIdService(productId);
     res.status(200).json(productDeleted);
   } catch (error) {
     next(error);

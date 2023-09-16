@@ -8,7 +8,7 @@ import ProductItem from "./ProductItem";
 
 export default function ProductsList() {
   const productsList = useSelector(
-    (state: RootState) => state.products.products
+    (state: RootState) => state.products.productsList
   );
   const isLoading = useSelector((state: RootState) => state.products.isLoading);
   const dispatch = useDispatch<AppDispatch>();

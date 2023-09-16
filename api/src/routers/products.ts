@@ -2,42 +2,21 @@ import Router from "express";
 import passport from "passport";
 
 import {
-  CreateAllProducts,
+  createProduct,
   getAllProductByUserId,
   getAllProducts,
-  getProductDetails,
-  updateProduct,
-  deleteProduct,
+  getProductById,
+  updateProductById,
+  deleteProductById,
 } from "../controllers/products";
 
 const router = Router();
 
-router.post(
-  "/:_id",
-  passport.authenticate("jwt", { session: false }),
-  CreateAllProducts
-);
-
-router.get(
-  "/:userId",
-  passport.authenticate("jwt", { session: false }),
-  getAllProductByUserId
-);
-
-router.get("/:productId", getProductDetails);
-
+router.post("/:_id",passport.authenticate("jwt", { session: false }), createProduct);
 router.get("/", getAllProducts);
-
-router.put(
-  "/:productId",
-  passport.authenticate("jwt", { session: false }),
-  updateProduct
-);
-
-router.delete(
-  "/:productId",
-  passport.authenticate("jwt", { session: false }),
-  deleteProduct
-);
+router.get("/:productId", getProductById);
+router.get("/user/:userId",passport.authenticate("jwt", { session: false }), getAllProductByUserId);
+router.put("/:productId",passport.authenticate("jwt", { session: false }),updateProductById);
+router.delete("/:productId",passport.authenticate("jwt", { session: false }),deleteProductById);
 
 export default router;
