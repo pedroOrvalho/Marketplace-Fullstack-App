@@ -21,17 +21,15 @@ export default function ProductDetail() {
 
   return (
     <div className="productDetail_container">
-      <button onClick={() => setToggler(!toggler)}>Open the lightbox.</button>
-      <FsLightbox
-        toggler={toggler}
-        sources={[
-          "https://i.imgur.com/fsyrScY.jpg",
-          "https://revealthat.com/wp-content/uploads/2022/08/iphone14-black.jpg",
-          "https://www.jbhifi.com.au/cdn/shop/products/596664-Product-0-I-637982209640642178_f7b95b4c-f054-42c9-9f96-d3f7b7a211f1.jpg?v=1686263287",
-          "https://i.redd.it/qd3xzi3munl91.jpg",
-          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-spaceblack_AV1_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661969351230",
-        ]}
-      />
+      <div className="productDetail_slider_container">
+        <button onClick={() => setToggler(!toggler)}>
+          <img src={productDetail?.image[1]} alt={productDetail?.title} />
+        </button>
+        <FsLightbox toggler={toggler} sources={productDetail?.image} />
+      </div>
+      <div className="productDetail_info_container">
+        <h1>{productDetail?.title}</h1>
+      </div>
     </div>
   );
 }

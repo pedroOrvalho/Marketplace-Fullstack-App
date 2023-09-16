@@ -6,14 +6,13 @@ export function fetchAllProductsData() {
   return async (dispatch: AppDispatch) => {
     const response = await fetch(productUrl);
     const productData = await response.json();
-
     dispatch(getProductsListData(productData));
   };
 }
 
 export function fetchProductById(id: string | undefined) {
   return async (dispatch: AppDispatch) => {
-    const response = await fetch(`http://localhost:7000/product/detail/${id}`);
+    const response = await fetch(`http://localhost:7000/product/${id}`);
     const data = await response.json();
     dispatch(getProductById(data));
   };
