@@ -380,15 +380,15 @@
 }
 /* --------------------------- Footer ---------------------------*/
 
-.Footer {
+.footer_container {
   font-size: 10px;
   background-color: blue;
   color: white;
-  height: 40vh;
+  height: 12rem;
  
 }
 
-.Footer_1 {
+.footer_links {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

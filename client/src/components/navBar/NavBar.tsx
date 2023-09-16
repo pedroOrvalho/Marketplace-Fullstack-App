@@ -19,7 +19,7 @@ export default function Navbar() {
         <Link id="navbar_link" to="/selling">
           <p>Selling</p>
         </Link>
-        <Link id="navbar_link" to="/market">
+        <Link id="navbar_link" to="/marketplace">
           <button className="btn">Go to MarketPlace</button>
         </Link>
       </div>
