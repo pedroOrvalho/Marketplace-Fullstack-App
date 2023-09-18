@@ -8,7 +8,11 @@ export default function ProductDetailInfo() {
 
   return (
     <div className="productDetail_info_container">
-      <h1>{productDetail?.title}</h1>
+      <div className="productDetail_info_top_container"></div>
+      <div className="productDetail_info_middle_container">
+        <h1>{productDetail?.title}</h1>
+      </div>
+      <div className="productDetail_info_bottom_container"></div>
     </div>
   );
 }

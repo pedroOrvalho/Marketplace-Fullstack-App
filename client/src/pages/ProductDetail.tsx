@@ -7,6 +7,8 @@ import { fetchProductById } from "../redux/thunk/product";
 import ProductDetailSlider from "../components/productDetail/ProductDetailSlider";
 import ProductDetailInfo from "../components/productDetail/ProductDetailInfo";
 
+import { Paper } from "@mui/material";
+
 export default function ProductDetail() {
   const dispatchThunk = useDispatch<AppDispatch>();
   const { id } = useParams();
@@ -16,9 +18,9 @@ export default function ProductDetail() {
   }, [id, dispatchThunk]);
 
   return (
-    <div className="productDetail_container">
+    <Paper className="productDetail_container" elevation={5}>
       <ProductDetailSlider />
       <ProductDetailInfo />
-    </div>
+    </Paper>
   );
 }
