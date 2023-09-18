@@ -19,16 +19,15 @@ import CableIcon from "@mui/icons-material/Cable";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { productActions } from "../../redux/slices/product";
+import { searchProduct } from "../../redux/slices/product";
 
-export default function Market() {
-  //*************** product Search***************/
+export default function MarketPlaceSidebar() {
   const dispatch = useDispatch();
   const [userInput, setUserInput] = useState("");
-  
+
   function onChangeHandler(event: React.ChangeEvent<HTMLInputElement>) {
     setUserInput(event.target.value);
-    dispatch(productActions.SearchProduct(userInput));
+    dispatch(searchProduct(userInput));
   }
 
   return (

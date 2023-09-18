@@ -7,13 +7,10 @@ import Login from "./pages/Login";
 import Buying from "./pages/Buying";
 import Selling from "./pages/Selling";
 import Footer from "./components/Footer";
-import Market from "./pages/marketplace/market";
-import ProductList from "./pages/marketplace/Product";
-import Admin from "./pages/users/admin";
+import MarketPlace from "./pages/MarketPlace";
+import ProductDetail from "./pages/ProductDetail";
 
 import "./App.css";
-import CreateListing from "./pages/userListing/CreateListing";
-import UsersPageListing from "./pages/userListing/UsersPageListing";
 
 function App() {
   return (
@@ -25,19 +22,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/buying" element={<Buying />} />
         <Route path="/selling" element={<Selling />} />
-        <Route path="/market" element={<Market />} />
-        <Route path="/product" element={<ProductList />} />
-        
-        <Route path="/create-listing" element={<CreateListing />} />
-        <Route path="/user-review" element={<UsersPageListing/>} />
-        
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/marketplace" element={<MarketPlace />} />
+        <Route path="/marketplace/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </div>
   );
 }
-
-/*  <Route path="/user" element={<UserItem />} /> */
 
 export default App;

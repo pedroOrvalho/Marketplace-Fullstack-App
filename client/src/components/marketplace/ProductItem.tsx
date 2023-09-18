@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { Product } from "../../components/types/type";
+import { Product } from "../types/type";
 import { Link } from "react-router-dom";
 
 type Prop = {
@@ -8,7 +8,7 @@ type Prop = {
 
 export default function ProductItem({ item }: Prop) {
   return (
-    <Link to={`/${item._id}`}>
+    <Link to={`/marketplace/${item._id}`}>
       <Box
         sx={{
           padding: 2,

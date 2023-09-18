@@ -4,9 +4,9 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 
 export default function Footer() {
   return (
-    <div className="Footer">
+    <div className="footer_container">
       <div>
-        <ul className="Footer_1">
+        <ul className="footer_links">
           <li>About</li>
           <li> Privacy</li>
           <li> Terms</li>

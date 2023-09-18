@@ -15,7 +15,7 @@ export default function HomeBanner() {
           through meaningful interactions and unique goods.
         </h2>
         <div className="home_banner_button_container">
-        <Link to="/market">
+        <Link to="/marketplace">
           <button className="btn_marketplace">Explore Marketplace</button>
         </Link>
         </div>
