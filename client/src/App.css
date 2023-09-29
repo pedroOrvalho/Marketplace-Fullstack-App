@@ -450,10 +450,9 @@
 
 .product-div {
   height: 100vh;
-  width: 90%;
+  width: 100%;
   background-color: rgb(254, 254, 253);
-  border: 1px solid rgb(242, 235, 235);
-  box-shadow: 1px 1px 1px 4px rgb(214, 209, 209);
+  
 }
 
 .market-div {
@@ -465,6 +464,4 @@
 .sidebar {
   grid-column: 1;
 }
-.product {
-  grid-column: 2/4;
-}
+

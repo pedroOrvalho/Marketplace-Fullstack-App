@@ -44,7 +44,7 @@ export default function Market() {
           <Fab size="small" href="/products">
             <ShoppingCartIcon className="icon" />
           </Fab>
-          <Link to="/products" className="link">
+          <Link to="/product" className="link">
             <p> Buying</p>
           </Link>
         </div>
